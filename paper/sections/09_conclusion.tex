@@ -1,0 +1,63 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+Context-adaptive access control is useful precisely because it can lower its
+guard, and that is also why it is dangerous. This paper argued that the
+adaptation should be confined to a set that is already safe. We formalised a
+constrained control problem over five latent threat states, four context
+modalities and a $243$-element action lattice, with four invariants: an
+unconditional actuation envelope (I1), an unconditional safety-traffic envelope
+(I2), a belief-conditional restriction that can only narrow the set (I3), and
+per-operation failure semantics that fail closed for confidentiality and
+integrity operations and fail-safe-allow for certified safety operations (I4).
+A forward Bayesian belief with cross-modal trust weights and a cross-node
+dispersion signal chooses among the admissible actions; it has no authority over
+the set itself.
+
+The evaluation supports the separation. Across $800$ runs, every
+invariant-enforcing policy records zero invariant violations per $1{,}000$
+decisions, including in the \texttt{tee} scenario where the belief is confidently
+wrong; the unconstrained risk-adaptive policy records $327.41$ and the static-low
+policy $393.31$. The full controller reaches $0.120$ mean attack-scenario utility
+against $0.084$ for static-high and $0.077$ for threshold CAAC, and denies
+$0.029$ of safety-critical requests against $0.088$ for static-high. It is
+cheaper than static-high in decision latency ($2.27$\,ms versus $6.00$\,ms) and
+modelled energy ($0.288$\,mJ versus $0.728$\,mJ), and it reduces policy switching
+from $15.3$ to $6.5$ per $1{,}000$ decisions relative to the same controller
+without hysteresis.
+
+The honest negative result is residual exposure. The invariant floor bounds the
+mechanism of a granted action, not the credential of the requester: the full
+controller grants $0.177$ of malicious requests against $0.127$ for static-high,
+and the gap is concentrated in the out-of-model case where the node's trusted
+execution environment is subverted ($0.473$ malicious grants, Brier $0.437$,
+poisoning AUROC $0.273$). Within the stated threat model, the attested device
+anchor and cross-node dispersion survive poisoning: the in-model downgrade yields
+a Brier score of $0.003$ and a belief AUROC of $1.000$. Strengthening the
+actuation floor to attestation plus deep inspection reduces malicious grants
+without changing the zero-violation result, which is the right way to buy
+exposure down once the estimator has been shown to be spoofable. The guarantee is
+carried by the unconditional invariants; the belief improves utility and detection
+when it can, and its failure does not become a safety failure.
+
+Several directions remain. The most important is a hardware testbed that replaces
+the analytical cost model with measured latency and energy on the three tiers. A
+second is a stronger adversary that computes a policy against the defender's model
+rather than following the scripted adaptive and resonant patterns; the invariant
+argument would survive, but the utility and exposure numbers would be a better
+bound. A third is out-of-band evidence---physical invariants, attestation rooted
+outside the node TEE, or independent channels---that a full-modality spoof cannot
+fabricate, which is the only way to close the \texttt{tee} gap rather than merely
+bound its damage. Finally, the admissible-set constructor and the fail-safe
+fallback are small enough to be verified with the timed-automata and
+monitor-generation techniques that runtime assurance has developed, and doing so
+would turn the structural argument of \cref{prop:structural} into a machine-checked
+property of the implementation.
+
+\section*{Data and code availability}
+
+The simulator, the analysis scripts, the frozen $800$-run matrix and a
+one-command reproduction procedure are available at
+\url{https://github.com/DrMahmoudAljawarneh/failsafe-caci-iot}. The IoT-23 capture
+used for the prior calibration is publicly available from the Stratosphere
+Laboratory \cite{garcia2020iot}.

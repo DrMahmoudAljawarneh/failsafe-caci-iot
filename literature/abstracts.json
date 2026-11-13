@@ -1,0 +1,242 @@
+{
+  "10.1109/jiot.2024.3371504": {
+    "doi": "10.1109/jiot.2024.3371504",
+    "title": "SC-CAAC: A Smart-Contract-Based Context-Aware Access Control Scheme for Blockchain-Enabled IoT Systems",
+    "year": 2024,
+    "venue": "IEEE Internet of Things Journal",
+    "abstract": "Integrating blockchain technology with the Internet of Things (IoT) facilitates seamless interaction between IoT devices and systems to securely share, access, and exchange data. However, ensuring adequate access control within blockchain-enabled IoT (BIoT) systems remains a significant challenge. It is often difficult to adapt existing access control mechanisms to the dynamic and context-dependent nature of IoT environments, necessitating a robust context-aware approach to ensure adequate security and the privacy of resources within BIoT systems. In this paper, we propose a novel smart contract-enabled context-aware access control (SC-CAAC) scheme for BIoT systems. It utilizes context-aware access control models that consider contextual information, including user profile, purpose, date, time, location, resource, and operating environment specifications, to make access control decisions. Smart contracts dynamically enforce access control policies and manage access permissions, ensuring that sensitive data and resources are accessible only to authorized users. The proposed scheme leverages the immutability, transparency, and decentralization of a blockchain that is shared by multiple participants in a consortium network, removing the need for a central authority to record and audit access control policies and decisions and promoting accountability and trust. The implementation and evaluation of our proposed scheme using the Hyperledger Besu blockchain demonstrates its effectiveness and scalability in real-world scenarios.",
+    "cited_by": 74
+  },
+  "10.1109/jiot.2025.3579028": {
+    "doi": "10.1109/jiot.2025.3579028",
+    "title": "Beyond Static Security: A Context-Aware and Real-Time Dynamic Zero Trust Architecture for IIoT Access Control",
+    "year": 2025,
+    "venue": "IEEE Internet of Things Journal",
+    "abstract": "In industrial environments, cyber threats are escalating at an unprecedented rate, yet many existing security solutions fail to account for both contextual factors and the criticality of different network segments. This challenge is especially pronounced in diverse, large-scale, and highly dynamic Industrial Internet of Things (IIoT) environments. This paper presents a dynamic Zero Trust Access Control (ZTA) model that adapts to real-time device status, network conditions, and user behavior to enforce context-aware, security-driven access decisions. At its core, our framework combines mathematical threat assessment with fuzzy logic-based state management (FSM) to continuously adjust trust levels and access permissions. We validated our approach, through a proof-of-concept using a cluster of virtual machines (VMs) to simulate a controlled environment. This setup demonstrates the ZTA models effectiveness in small-scale networks and provides a foundation for testing various access scenarios and evaluating security policies.",
+    "cited_by": 12
+  },
+  "10.1016/j.jksuci.2020.11.023": {
+    "doi": "10.1016/j.jksuci.2020.11.023",
+    "title": "CAB-IoT: Continuous authentication architecture based on Blockchain for internet of things",
+    "year": 2020,
+    "venue": "Journal of King Saud University - Computer and Information Sciences",
+    "abstract": "Raising incidents of security threats among active sessions is an increasing concern in IoT environment. Continuous authentication was introducing to be superior to traditional authentication schemes by constantly verify users’ identities on an ongoing basis and spot the moment at which an illicit attacker seizes control of the session. However, several challenges remain unsolved. This research aims to investigate the power of Blockchain technology to provide real-time and non-intrusive continuous authentication for the IoT environment. Accordingly, a distributed and scalable continuous authentication solution based on Blockchain technology called CAB-IoT was proposed. It enabled fog nodes layer that tackles the limitations of IoT resources by providing localized processing of heavy continuous authentication-related tasks for a group of IoT devices. Besides, CAB-IoT introduced a trust module that depends on the face recognition machine learning model to detect outliers and abnormal access. Moreover, mutual authentication between end-users and fog nodes is also designed, as well as secure communication between the authenticated nodes. The results demonstrate a lightweight continuous authentication solution that achieved the desired balance between security and performance requirements where it was observed in a real-world environment for truly performance results. Security analysis and attack analysis are also considered during the evaluation.",
+    "cited_by": 61
+  },
+  "10.1109/siot.2017.00010": {
+    "doi": "10.1109/siot.2017.00010",
+    "title": "Adaptive Risk-Aware Access Control Model for Internet of Things",
+    "year": 2017,
+    "venue": "International Workshop Secure Internet Things",
+    "abstract": "IoT technology allows people to connect to and control devices remotely anywhere and anytime. However, serious concerns are raised over access control of sensitive IoT devices (e.g. portable health device) and personal information pertaining to them. The static access control model used in conventional system, which does not take into account the profile and behaviour of the agent requesting access to the system to determine the risk associated with the request, does not fit well to be used in some scenarios of some IoT application domains (e.g. smart healthcare). In this paper, we propose an adaptive risk-aware access control and the integration of this concept into the existing access control models, such as attribute-based and privacy-aware role-based access control. The proposed model is designed to address both security and privacy concerns for data sharing in IoT system. A prototype of the access control system implemented in XACML based on the proposed model is also presented in this paper.",
+    "cited_by": 15
+  },
+  "10.5220/0006292602540260": {
+    "doi": "10.5220/0006292602540260",
+    "title": "An Overview of Risk Estimation Techniques in Risk-based Access Control for the Internet of Things",
+    "year": 2017,
+    "venue": "International Conference on Internet of Things, Big Data and Security (IoTBDS)",
+    "abstract": "The Internet of Things (IoT) represents a modern approach where boundaries between real and digital domains are progressively eliminated by changing over consistently every physical device to smart object ready to provide valuable services. These services provide a vital role in different life domains but at the same time create new challenges particularly in security and privacy. Authentication and access control models are considered as the essential elements to address these security and privacy challenges. Risk-based access control model is one of the dynamic access control models that provides more flexibility in accessing system resources. This model performs a risk analysis to estimate the security risk associated with each access request and uses the estimated risk to make the access decision. One of the essential elements in this model is the risk estimation process. Estimating risk is a complex operation that requires the consideration of a variety of factors in the access control environment. Moreover, the interpretation and estimation of the risk might vary depending on the working domain. This paper presents a review of different risk estimation techniques. Existing risk-based access control models are discussed and compared in terms of the risk estimation technique, risk factors, and the evaluation domain. Requirements for choosing the appropriate risk estimation technique for the IoT system are also demonstrated.",
+    "cited_by": 62
+  },
+  "10.1109/isncc.2019.8909196": {
+    "doi": "10.1109/isncc.2019.8909196",
+    "title": "Context-Aware Operation-Based Access Control for Internet of Things Applications",
+    "year": 2019,
+    "venue": "International Symposium on Networks, Computers and Communications (ISNCC)",
+    "abstract": "Recently, interest of both the academic and industrial world in Internet of Things (IoT) has been increasing and this trend requires development of new security approaches addressing potential weaknesses in this domain. Despite the presence of many studies directed towards security of IoT applications, they are mostly adoption of current methods to IoT scenarios. Yet, IoT applications are comprised of various kinds of different entities including computers, processes, people and services. Therefore, it is inadequate to detect malicious attempts by using conventional security methods, which apply fixed security policies and do not take interaction of things, that is context information, into account. In this study, by considering new security requirements of next generation IoT applications, we propose a fine-grained, dynamic and easily manageable access control model, which is called context-aware operation-based access control.",
+    "cited_by": 7
+  },
+  "10.1109/icc.2019.8761830": {
+    "doi": "10.1109/icc.2019.8761830",
+    "title": "Context-Aware Adaptive Authentication and Authorization in Internet of Things",
+    "year": 2019,
+    "venue": "International Conference on Communications",
+    "abstract": "The rapid technological advancements in wireless communications, ubiquitous sensing and mobile networking have paved the way for the emergence of the Internet of Things (IoT) era, where “anything” can be connected “anywhere” at “anytime”. However, the flourish of IoT still faces various security and privacy preserving challenges that need to be addressed. In such pervasive and heterogeneous environment where the context conditions dynamically and frequently change, efficient and context-aware mechanisms are required to meet the users' changing needs. Therefore, it seems crucial to design an adaptive access control scheme in order to remotely control smart things while considering the dynamic context changes. In this paper, we propose a Context-Aware Attribute-Based Access Control (CAABAC) approach that incorporates the contextual information with the Ciphertext-Policy Attribute-based Encryption (CP-ABE) to ensure data security and provide an adaptive contextual privacy. From a security perspective, the proposed scheme satisfies the security requirements such as confidentiality, context-aware privacy, and resilience against key escrow problem. Performance analysis proves the efficiency and the effectiveness of the proposed scheme compared to benchmark schemes in terms of storage, communication and computational cost.",
+    "cited_by": 24
+  },
+  "10.1007/s10922-025-10003-8": {
+    "doi": "10.1007/s10922-025-10003-8",
+    "title": "A Dynamic Context-Aware and Role-Capability Based Access Control Mechanism for Internet of Things",
+    "year": 2025,
+    "venue": "Journal of Network and Systems Management",
+    "abstract": "",
+    "cited_by": 4
+  },
+  "10.1109/access.2019.2927037": {
+    "doi": "10.1109/access.2019.2927037",
+    "title": "Protecting Cyber Physical Systems Using a Learned MAPE-K Model",
+    "year": 2019,
+    "venue": "IEEE Access",
+    "abstract": "Industry 4.0 leverages on cyber-physical systems (CPSs) that enable different physical sensors, actuators, and controllers to be interconnected via switches and cloud computing servers, forming complex online systems. Protecting these against advanced cyber threats is a primary concern for future application. Cyberattackers can impair such systems by producing different types of cyber threats, ranging from network attacks to CPS controller attacks, which could impose catastrophic damage to CPS infrastructure, companies, governments, and even the general public. This paper proposes a learned monitor, analyze, plan, execute, and knowledge (MAPE-K) base model as a method for supporting self-adaptation for the CPSs, ensuring reliability, flexibility, and protection against cyber threats. The model aims to gauge normal behavior in an industry environment and generate alarms to alert users to any abnormalities or threats. In turn, our evaluation shows 99.55% accuracy in detecting cyber threats.",
+    "cited_by": 23
+  },
+  "10.1007/978-3-642-02161-9_1": {
+    "doi": "10.1007/978-3-642-02161-9_1",
+    "title": "Software Engineering for Self-Adaptive Systems: A Research Roadmap",
+    "year": 2009,
+    "venue": "Lecture notes in computer science",
+    "abstract": "",
+    "cited_by": 1139
+  },
+  "10.23919/fmcad.2019.8894264": {
+    "doi": "10.23919/fmcad.2019.8894264",
+    "title": "Shield Synthesis for Real: Enforcing Safety in Cyber-Physical Systems",
+    "year": 2019,
+    "venue": "Formal Methods in Computer-Aided Design",
+    "abstract": "Cyber-physical systems are often safety-critical in that violations of safety properties may lead to catastrophes. We propose a method to enforce the safety of systems with real-valued signals by synthesizing a runtime enforcer called the shield. Whenever the system violates a property, the shield, composed with the system, makes correction instantaneously to ensure that no erroneous output is generated by the combined system. While techniques for synthesizing Boolean shields are well understood, they do not handle real-valued signals ubiquitous in cyber-physical systems, meaning their corrections may be either unrealizable or inefficient to compute in the real domain. We solve the realizability and efficiency problems by analyzing the compatibility of predicates defined over real-valued signals, and using the analysis result to constrain a two-player safety game used to synthesize the shield. We demonstrate the effectiveness of this method on a variety of applications, including an automotive powertrain control system.",
+    "cited_by": 28
+  },
+  "10.1145/3061639.3072957": {
+    "doi": "10.1145/3061639.3072957",
+    "title": "Safety Guard: Runtime Enforcement for Safety-Critical Cyber-Physical Systems: Invited",
+    "year": 2017,
+    "venue": "ACM/IEEE Design Automation Conference (DAC)",
+    "abstract": "Due to their safety-critical nature, cyber-physical systems (CPS) must tolerate faults and security attacks to remain fail-operational. However, conventional techniques for improving safety, such as testing and validation, do not meet this requirement, as shown by many of the real-world system failures in recent years, often with major economic and public-safety implications. We aim to improve the safety of critical CPS through synthesis of runtime enforcers, named safety guards, which are reactive components attached to the original systems to protect them against catastrophic failures. That is, even if the system occasionally malfunctions due to unknown defects, transient errors, or malicious attacks, the guard always reacts instantaneously to ensure that the combined system satisfies a predefined set of safety properties, and the deviation from the original system is kept at minimum. We illustrate the main ideas of this approach with examples, discuss the advantages compared to existing approaches, and point out some research challenges.",
+    "cited_by": 31
+  },
+  "10.1145/3558482.3590188": {
+    "doi": "10.1145/3558482.3590188",
+    "title": "Maverick: An App-independent and Platform-agnostic Approach to Enforce Policies in IoT Systems at Runtime",
+    "year": 2023,
+    "venue": "ACM Conference on Security and Privacy in Wireless and Mobile Networks (WiSec)",
+    "abstract": "Many solutions have been proposed to curb unexpected behavior of automation apps installed on programmable IoT platforms by enforcing safety policies at runtime. However, all prior work addresses a weaker version of the actual problem due to a simpler, unrealistic threat model. These solutions are not general enough as they are heavily dependent on the installed apps and catered to specific IoT platforms. Here, we address a stronger version of the problem via a realistic threat model, where (i) undesired cyber actions can come from not only automation platform backends (e.g., SmartThings) but also close-sourced third-party services (e.g., IFTTT), and (ii) physical actions (e.g., user interactions) on devices can move the IoT system to an undesirable state. We propose a runtime mechanism, dubbed Maverick, which employs an app-independent, platform-agnostic mediator to enforce policies against all undesired cyber actions and applies corrective-actions to bring the IoT system back to a safe state from an unsafe state transition. Maverick is equipped with a policy language capable of expressing rich temporal invariants and an automated toolchain that includes a policy synthesizer and a policy analyzer for user assistance. We implemented Maverick in a prototype and showed its efficacy in both physical and virtual testbeds, incurring minimal overhead.",
+    "cited_by": 5
+  },
+  "10.1109/jiot.2020.2969326": {
+    "doi": "10.1109/jiot.2020.2969326",
+    "title": "A Survey on Access Control in the Age of Internet of Things",
+    "year": 2020,
+    "venue": "IEEE Internet of Things Journal",
+    "abstract": "With the development of Internet-of-Things (IoT) technology, various types of information, such as social resources and physical resources, are deeply integrated for different comprehensive applications. Social networking, car networking, medical services, video surveillance, and other forms of the IoT information service model gradually change people's daily lives. Facing the vast amounts of IoT information data, the IoT search technology is used to quickly find accurate information to meet the real-time search needs of users. However, IoT search requires using a large amount of user private information, such as personal health information, location information, and social relations information, to provide personalized services. Employing private information from users will encounter security problems if an effective access control mechanism is missing during the IoT search process. An access control mechanism can effectively monitor the access activities of resources and ensure that authorized users access information resources under legitimate conditions. This survey examines the growing literature on access control for an IoT search. Problems and challenges of access control mechanisms are analyzed to facilitate the adoption of access control solutions in real-life settings. This article aims to provide theoretical, methodological, and technical guidance for IoT search access control mechanisms in large-scale dynamic heterogeneous environments. Based on a literature review, we also analyzed the future development direction of access control in the age of IoT.",
+    "cited_by": 479
+  },
+  "10.1016/j.jnca.2019.06.017": {
+    "doi": "10.1016/j.jnca.2019.06.017",
+    "title": "Access control in Internet-of-Things: A survey",
+    "year": 2019,
+    "venue": "Journal of Network and Computer Applications",
+    "abstract": "",
+    "cited_by": 186
+  },
+  "10.3390/electronics12030566": {
+    "doi": "10.3390/electronics12030566",
+    "title": "A Zero-Trust Architecture for Remote Access in Industrial IoT Infrastructures",
+    "year": 2023,
+    "venue": "Electronics",
+    "abstract": "This paper considers the domain of Industrial Internet of Things (IIoT) infrastructures and the recurring need for collaboration across teams and stakeholders by means of remote access. The paper describes a secure solution beyond the traditional perimeter-based security approach, which consists of an architecture that supports multi-level authorization to achieve fine-grained access control, better scalability, and maintainability. An implementation of the proposed solution, using open-source technologies, is also discussed and covers the protection of both the network and edge domains of a complex IIoT infrastructure. Finally, the paper presents a risk-driven and model-based process that is designed to support the migration of existing infrastructures to the solution architecture. The approach is validated, taking as a reference two relevant scenarios for the aerospace industry.",
+    "cited_by": 95
+  },
+  "10.1016/j.adhoc.2024.103414": {
+    "doi": "10.1016/j.adhoc.2024.103414",
+    "title": "Flexible zero trust architecture for the cybersecurity of industrial IoT infrastructures",
+    "year": 2024,
+    "venue": "Ad Hoc Networks",
+    "abstract": "The growing digitalization of industrial systems and the increasing adoption of cloud technologies pose significant challenges to the secure management of modern industrial infrastructures integrating different Industrial Internet of Things (IIoT). Existing cybersecurity solutions can manage uniform and centralized software systems but are not designed to accommodate the requirements of heterogeneous IIoT devices, such as hard real-time operations, high reliability, and decentralization for distributed decision-making. We present a novel security architecture that is specifically designed to address the stringent requirements of IIoT systems. It is based on a network micro-segmentation that can be seamlessly integrated into existing environments, and two main components: a software-defined network (SDN) ensuring a unified abstraction layer for policy enforcement across diverse environments; and a centralized security management layer that simplifies the policy execution of any architectural design. We demonstrate the feasibility and effects of this original combination through a prototype. It experimentally demonstrates that our peer-to-peer SDN coupled with an asynchronous policy distribution process guarantees resiliency to individual failures, and enables fully decentralized operations while still ensuring a central flexible management of network topology and security policies.",
+    "cited_by": 143
+  },
+  "10.1109/ACCESS.2022.3165809": {
+    "doi": "10.1109/ACCESS.2022.3165809",
+    "title": "Edge-IIoTset: A New Comprehensive Realistic Cyber Security Dataset of IoT and IIoT Applications for Centralized and Federated Learning",
+    "year": 2022,
+    "venue": "IEEE Access",
+    "abstract": "In this paper, we propose a new comprehensive realistic cyber security dataset of IoT and IIoT applications, called Edge-IIoTset, which can be used by machine learning-based intrusion detection systems in two different modes, namely, centralized and federated learning. Specifically, the dataset has been generated using a purpose-built IoT/IIoT testbed with a large representative set of devices, sensors, protocols and cloud/edge configurations. The IoT data are generated from various IoT devices (more than 10 types) such as Low-cost digital sensors for sensing temperature and humidity, Ultrasonic sensor, Water level detection sensor, pH Sensor Meter, Soil Moisture sensor, Heart Rate Sensor, Flame Sensor, etc.). Furthermore, we identify and analyze fourteen attacks related to IoT and IIoT connectivity protocols, which are categorized into five threats, including, DoS/DDoS attacks, Information gathering, Man in the middle attacks, Injection attacks, and Malware attacks. In addition, we extract features obtained from different sources, including alerts, system resources, logs, network traffic, and propose new 61 features with high correlations from 1176 found features. After processing and analyzing the proposed realistic cyber security dataset, we provide a primary exploratory data analysis and evaluate the performance of machine learning approaches (i.e., traditional machine learning as well as deep learning) in both centralized and federated learning modes. The Edge-IIoTset dataset can be publicly accessed fromhttp://ieee-dataport.org/8939.",
+    "cited_by": 1411
+  },
+  "10.3390/s23135941": {
+    "doi": "10.3390/s23135941",
+    "title": "CICIoT2023: A Real-Time Dataset and Benchmark for Large-Scale Attacks in IoT Environment",
+    "year": 2023,
+    "venue": "Sensors",
+    "abstract": "Nowadays, the Internet of Things (IoT) concept plays a pivotal role in society and brings new capabilities to different industries. The number of IoT solutions in areas such as transportation and healthcare is increasing and new services are under development. In the last decade, society has experienced a drastic increase in IoT connections. In fact, IoT connections will increase in the next few years across different areas. Conversely, several challenges still need to be faced to enable efficient and secure operations (e.g., interoperability, security, and standards). Furthermore, although efforts have been made to produce datasets composed of attacks against IoT devices, several possible attacks are not considered. Most existing efforts do not consider an extensive network topology with real IoT devices. The main goal of this research is to propose a novel and extensive IoT attack dataset to foster the development of security analytics applications in real IoT operations. To accomplish this, 33 attacks are executed in an IoT topology composed of 105 devices. These attacks are classified into seven categories, namely DDoS, DoS, Recon, Web-based, brute force, spoofing, and Mirai. Finally, all attacks are executed by malicious IoT devices targeting other IoT devices. The dataset is available on the CIC Dataset website.",
+    "cited_by": 1494
+  },
+  "10.1109/iaw.2005.1495974": {
+    "doi": "10.1109/iaw.2005.1495974",
+    "title": "Wireless sensor network denial of sleep attack",
+    "year": 2005,
+    "venue": "IEEE SMC Information Assurance Workshop (IAW)",
+    "abstract": "With the progression of computer networks extending boundaries and joining distant locations, wireless sensor networks (WSN) emerge as the new frontier in developing opportunities to collect and process data from remote locations. Like IEEE 802.3 wired and IEEE 802.11 wireless networks, remote wireless sensor networks are vulnerable to malicious attacks. While wired and infrastructure-based wireless networks have mature intrusion detection systems and sophisticated firewalls to block these attacks, wireless sensor networks have only primitive defenses. WSNs rely on hardware simplicity to make sensor field deployments both affordable and long-lasting without any maintenance support. Energy-constrained sensor networks periodically place nodes to sleep in order to extend the network lifetime. Denying sleep effectively attacks each sensor node's critical energy resources and rapidly drains the network's lifetime. This paper analyzes the energy resource vulnerabilities of wireless sensor networks, models the network lifetimes of leading WSN medium access control (MAC) protocols, and proposes a new MAC protocol which mitigates many of the effects of denial of sleep attacks.",
+    "cited_by": 119
+  },
+  "10.1109/tvt.2008.921621": {
+    "doi": "10.1109/tvt.2008.921621",
+    "title": "Effects of Denial-of-Sleep Attacks on Wireless Sensor Network MAC Protocols",
+    "year": 2009,
+    "venue": "IEEE Transactions on Vehicular Technology",
+    "abstract": "Wireless platforms are becoming less expensive and more powerful, enabling the promise of widespread use for everything from health monitoring to military sensing. Like other networks, sensor networks are vulnerable to malicious attack. However, the hardware simplicity of these devices makes defense mechanisms designed for traditional networks infeasible. This paper explores thedenial-of-sleepattack, in which a sensor node's power supply is targeted. Attacks of this type can reduce the sensor lifetime from years to days and have a devastating impact on a sensor network. This paper classifies sensor network denial-of-sleep attacks in terms of an attacker's knowledge of the medium access control (MAC) layer protocol and ability to bypass authentication and encryption protocols. Attacks from each classification are then modeled to show the impacts on four sensor network MAC protocols, i.e., Sensor MAC (S-MAC), Timeout MAC (T-MAC), Berkeley MAC (B-MAC), and Gateway MAC (G-MAC). Implementations of selected attacks on S-MAC, T-MAC, and B-MAC are described and analyzed in detail to validate their effectiveness and analyze their efficiency. Our analysis shows that the most efficient attack on S-MAC can keep a cluster of nodes awake 100% of the time by an attacker that sleeps 99% of the time. Attacks on T-MAC can keep victims awake 100% of the time while the attacker sleeps 92% of the time. A framework for preventing denial-of-sleep attacks in sensor networks is also introduced. With full protocol knowledge and an ability to penetrate link-layer encryption, all wireless sensor network MAC protocols are susceptible to a full domination attack, which reduces the network lifetime to the minimum possible by maximizing the power consumption of the nodes' radio subsystem. Even without the ability to penetrate encryption, subtle attacks can be launched, which reduce the network lifetime by orders of magnitude. If sensor networks are to meet current expectations, they must be robust in the face of network attacks to include denial-of-sleep.",
+    "cited_by": 212
+  },
+  "10.1109/tcyb.2019.2915124": {
+    "doi": "10.1109/tcyb.2019.2915124",
+    "title": "Summation Detector for False Data-Injection Attack in Cyber-Physical Systems",
+    "year": 2019,
+    "venue": "IEEE Transactions on Cybernetics",
+    "abstract": "In this paper, from the perspectives of defenders, we consider the detection problems of false data-injection attacks in cyber-physical systems (CPSs) with white noise. The false data-injection attacks usually modify the sensor data to make CPSs unstable and keep stealth for the χ2 detector. To guarantee system security, a novel detector, that is, the summation (SUM) detector, is proposed to detect the false data-injection attacks. Different from the χ2 detector, the SUM detector not only utilizes the current compromise information but also collects all historical information to reveal the threat. Its evaluation value also satisfies χ2 distribution when no attacks compromise the systems, and the false alarm rate can be restricted to less than any given value by choosing the proper threshold value. Furthermore, an improved false data-injection attack with a time-variable increment coefficient is introduced based on the existing approaches. The effects of the SUM detector are also verified for the traditional and the improved false data-injection attacks, respectively. Finally, some simulation results are given to demonstrate the effectiveness and superiority of the SUM detector.",
+    "cited_by": 315
+  },
+  "10.1109/ms.2001.936213": {
+    "doi": "10.1109/ms.2001.936213",
+    "title": "Using simplicity to control complexity",
+    "year": 2001,
+    "venue": "IEEE Software",
+    "abstract": "Improving the reliability and availability of increasingly complex software is a serious challenge, especially in efforts to protect society's critical functions. Is it true that building diverse, redundant systems provides robustness? This article investigates the relationship between software complexity, reliability, and development resources. It also presents a forward-recovery approach based on the idea of using simplicity to control complexity as a way to improve the robustness of complex software systems.",
+    "cited_by": 459
+  },
+  "10.1007/978-3-031-06773-0_12": {
+    "doi": "10.1007/978-3-031-06773-0_12",
+    "title": "The Black-Box Simplex Architecture for Runtime Assurance of Autonomous CPS",
+    "year": 2022,
+    "venue": "Lecture notes in computer science",
+    "abstract": "",
+    "cited_by": 35
+  },
+  "10.1007/s00145-021-09398-9": {
+    "doi": "10.1007/s00145-021-09398-9",
+    "title": "Ascon v1.2: Lightweight Authenticated Encryption and Hashing",
+    "year": 2021,
+    "venue": "Journal of Cryptology",
+    "abstract": "Abstract Authenticated encryption satisfies the basic need for authenticity and confidentiality in our information infrastructure. In this paper, we provide the specification of Ascon -128 and Ascon -128a. Both authenticated encryption algorithms provide efficient authenticated encryption on resource-constrained devices and on high-end CPUs. Furthermore, they have been selected as the “primary choice” for lightweight authenticated encryption in the final portfolio of the CAESAR competition. In addition, we specify the hash function Ascon-Hash , and the extendable output function Ascon-Xof . Moreover, we complement the specification by providing a detailed overview of existing cryptanalysis and implementation results.",
+    "cited_by": 577
+  },
+  "10.1109/access.2025.3529757": {
+    "doi": "10.1109/access.2025.3529757",
+    "title": "Implementation and Performance of Lightweight Authentication Encryption ASCON on IoT Devices",
+    "year": 2025,
+    "venue": "IEEE Access",
+    "abstract": "The Internet of Things (IoT) is growing rapidly, enabling interconnected devices to communicate and share data seamlessly. While this expansion drives significant advancements across industries, it also introduces critical challenges in ensuring secure device communication. IoT devices often operate under strict constraints in processing power, memory, and energy consumption, complicating the implementation of robust security measures. Lightweight cryptographic algorithms have emerged to address these challenges, with ASCON gaining recognition for its robustness and efficiency. Selected as the winner of the National Institute of Standards and Technology (NIST) competition for lightweight encryption algorithms, ASCON ensures confidentiality and integrity through authenticated encryption with associated data (AEAD) tailored for resource-constrained environments. This paper presents the implementation and performance analysis of ASCON on IoT devices. Using the CupCarbon simulator framework, optimized for modeling smart cities and wireless sensor networks, we evaluate its effectiveness under resource-limited conditions. Performance metrics are analyzed, including latency, response times, and resource utilization. Additionally, ASCON is implemented on Raspberry Pi devices to validate its feasibility in real-world scenarios. Results demonstrate that ASCON enables efficient and secure communications while minimizing computational overhead, making it a viable solution for IoT environments with constrained resources. These findings highlight ASCON’s potential to address critical security needs in the rapidly evolving IoT landscape.",
+    "cited_by": 44
+  },
+  "10.1109/trustcom50675.2020.00100": {
+    "doi": "10.1109/trustcom50675.2020.00100",
+    "title": "Data Analytics-Enabled Intrusion Detection: Evaluations of ToN_IoT Linux Datasets",
+    "year": 2020,
+    "venue": "IEEE International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)",
+    "abstract": "With the widespread of Artificial Intelligence (AI)-enabled security applications, there is a need for collecting heterogeneous and scalable data sources for effectively evaluating the performances of security applications. This paper presents the description of new datasets, named ToN_IoT datasets that include distributed data sources collected from Telemetry datasets of Internet of Things (IoT) services, Operating systems datasets of Windows and Linux, and datasets of Network traffic. The paper aims to describe the new testbed architecture used to collect Linux datasets from audit traces of hard disk, memory and process. The architecture was designed in three distributed layers of edge, fog, and cloud. The edge layer comprises IoT and network systems, the fog layer includes virtual machines and gateways, and the cloud layer includes data analytics and visualization tools connected with the other two layers. The layers were programmatically controlled using Software-Defined Network (SDN) and Network-Function Virtualization (NFV) using the VMware NSX and vCloud NFV platform. The Linux ToN_IoT datasets would be used to train and validate various new federated and distributed AI-enabled security solutions such as intrusion detection, threat intelligence, privacy preservation and digital forensics. Various Data analytical and machine learning methods are employed to determine the fidelity of the datasets in terms of examining feature engineering, statistics of legitimate and security events, and reliability of security events. The datasets can be publicly accessed from [1].",
+    "cited_by": 118
+  },
+  "10.1016/j.scs.2021.102994": {
+    "doi": "10.1016/j.scs.2021.102994",
+    "title": "A new distributed architecture for evaluating AI-based security systems at the edge: Network TON_IoT datasets",
+    "year": 2021,
+    "venue": "Sustainable Cities and Society",
+    "abstract": "",
+    "cited_by": 848
+  },
+  "10.1145/984334.984339": {
+    "doi": "10.1145/984334.984339",
+    "title": "The UCON ABC usage control model",
+    "year": 2004,
+    "venue": "ACM Transactions on Information and System Security",
+    "abstract": "In this paper, we introduce the family of UCON ABC models for usage control (UCON), which integrate Authorizations (A), oBligations (B), and Conditions (C) . We call these core models because they address the essence of UCON, leaving administration, delegation, and other important but second-order issues for later work. The term usage control is a generalization of access control to cover authorizations, obligations, conditions, continuity (ongoing controls), and mutability. Traditionally, access control has dealt only with authorization decisions on users' access to target resources. Obligations are requirements that have to be fulfilled by obligation subjects for allowing access. Conditions are subject and object independent environmental or system requirements that have to be satisfied for access. In today's highly dynamic, distributed environment, obligations and conditions are also crucial decision factors for richer and finer controls on usage of digital resources. Although they have been discussed occasionally in recent literature, most authors have been motivated from specific target problems and thereby limited in their approaches. The UCON ABC model integrates these diverse concepts in a unified framework. Traditional authorization decisions are generally made at the time of requests but hardly recognize ongoing controls for relatively long-lived access or for immediate revocation. Moreover, mutability issues that deal with updates on related subject or object attributes as a consequence of access have not been systematically studied.Unlike other studies that have targeted on specific problems or issues, the UCON ABC model seeks to enrich and refine the access control discipline in its definition and scope. UCON ABC covers traditional access controls such as mandatory, discretionary, and role-based access control. Digital rights management and other modern access controls are also covered. UCON ABC lays the foundation for next generation access controls that are required for today's real-world information and systems security. This paper articulates the core of this new area of UCON and develops several detailed models.",
+    "cited_by": 1014
+  },
+  "10.6028/NIST.SP.800-207": {
+    "doi": "10.6028/NIST.SP.800-207",
+    "title": "Zero Trust Architecture",
+    "year": 2020,
+    "venue": null,
+    "abstract": "",
+    "cited_by": 2018
+  }
+}

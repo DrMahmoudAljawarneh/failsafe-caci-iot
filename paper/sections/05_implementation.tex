@@ -1,0 +1,123 @@
+\section{Implementation}
+\label{sec:implementation}
+
+\subsection{Simulator and reproducibility}
+\label{sec:sim-implementation}
+
+The evaluation harness is a discrete-time simulator written in Python\,3.14 with
+NumPy\,2.5 and SciPy\,1.18. It generates a 24-node deployment with the tier mix
+of \cref{sec:system-model}, a latent threat state, four context modalities and
+per-request access decisions. Each run has 2{,}000 epochs; ten seeds are used for
+every scenario, and all ten policies are replayed against the byte-identical
+observation and request stream generated for that seed and scenario. Comparisons
+are therefore paired, and a policy cannot gain by seeing a different sequence of
+requests. The full matrix is 800 policy runs (10 seeds $\times$ 8 scenarios
+$\times$ 10 policies) and completes in about 50 seconds on eight cores.
+
+The simulator is \emph{parameterised}, not a replay. The observation model, the
+transition matrix and the attack processes are explicit; no raw packet capture is
+loaded at run time. The public IoT-23 capture is used offline to calibrate one
+prior (the benign-to-malicious network-intensity contrast) and is documented in
+\cref{sec:trace}. This distinction is deliberate: a simulator that claims to
+replay a dataset but generates random numbers is not reproducible, and a
+trace-driven evaluation would answer a different question (can the monitor
+recognise known attack signatures?) than the one asked here (does the controller
+remain safe when the context is adversarially chosen?).
+
+\subsection{Scenarios and policies}
+\label{sec:scenarios}
+
+The eight scenarios share the same node topology and request process; they
+differ in the latent state process and the poisoning channel.
+
+\begin{description}
+  \item[None.] Benign operation with occasional reconnaissance. This is the
+  utility reference, not a safety test.
+  \item[DoS.] Three non-overlapping attack windows in which the latent state is
+  DoS; the network and security modalities show congestion and inspection
+  failures. No context spoofing is applied, so the attack is observable.
+  \item[Downgrade.] The same windows, but the adversary moves the network and
+  security modalities toward the benign distribution while leaving the attested
+  device modality and the cross-node dispersion intact. Physical effects remain,
+  but the network evidence is consistent with a calm plant. This is the in-model
+  poisoning attack: it assumes the anchor is trustworthy.
+  \item[TEE.] An explicit out-of-model stress test in which the adversary also
+  spoofs the attested device modality, i.e.\ the node's trusted execution
+  environment is assumed subverted. It is the only scenario that instantiates
+  the fifth latent state (compromised); the other attack scenarios use DoS,
+  Byzantine or no serious state. This scenario exists to separate two claims:
+  the invariant guarantee, which still holds, from belief quality, which does
+  not. It is not used to argue that the architecture detects a TEE compromise.
+  \item[Energy.] The adversary inflates the apparent threat: the network and
+  security modalities look like an attack while the plant is benign. The goal is
+  denial-of-sleep and over-provisioning.
+  \item[Byzantine.] Ten of 24 nodes collude and report fabricated benign context.
+  The honest majority still determines the median for most features, but the
+  cross-node dispersion rises. This tests aggregation robustness, not majority
+  capture.
+  \item[Resonant.] The adversary alternates downgrade and energy poisoning at a
+  period close to the controller's dwell time, attempting to force posture
+  thrashing.
+  \item[Adaptive.] The adversary starts with partial spoofing, increases the
+  spoofed fraction over the first 600 epochs, and then holds the anomaly score
+  just below the public point-estimate threshold (0.55). It uses the published
+  policy parameters but does not solve the defender's POMDP.
+\end{description}
+
+The ten policies are: Static-High (always the strongest posture, with Ascon at
+the AEAD level), Static-Med (a uniform middle posture, raised to each
+operation's floor), Static-Low (always the weakest), Threshold-CAAC (a
+univariate point-estimate anomaly threshold on the same feature the attacker
+manipulates, raised to the structural floor; a multivariate or learned detector
+is not evaluated, which is a limitation of the baseline set), Risk-Only
+(Bayesian belief, no invariants), Invariant-Only
+(invariants, no belief; uses the anomaly point estimate), Full$-$Hyst (full
+controller without hysteresis or margin), Full$-$Cons (full controller with
+uniform modality fusion), Full (the proposed controller) and Oracle (knows the
+latent state). Static-High and Static-Med use the same Ascon primitive as the
+adaptive policies, so the comparison is not confounded by cipher choice. The
+deliberately unconstrained baselines (Static-Low, Risk-Only) do not install the
+node-side PEP re-check; every policy that claims the invariant guarantee does.
+Making the unconstrained baselines structurally safe would erase the
+counterfactual that RQ1 measures.
+
+\subsection{Analytical cost model}
+\label{sec:cost-model}
+
+Latency and energy are estimated from per-layer operation costs rather than
+measured on silicon. For action
+$a=(a_{\mathrm{auth}},a_{\mathrm{cry}},a_{\mathrm{ids}},a_{\mathrm{rate}},a_{\mathrm{ttl}})$,
+\begin{equation}
+  \ell(a)=\ell_0+\sum_{\ell}\ell_{\ell}(a_\ell),\qquad
+  e(a)=e_0+\sum_{\ell}e_{\ell}(a_\ell),
+  \label{eq:cost}
+\end{equation}
+where the per-layer constants are derived from datasheet-level operation counts
+for the three tiers and $\ell_0,e_0$ cover request validation. The tier
+multipliers are $1.00$, $0.60$ and $0.35$ for Class-1, Class-2 and gateway
+respectively, and the reported latency uses the tier distribution of the
+deployment. The resulting numbers are \emph{analytical estimates}; they are
+useful for comparing postures and for checking that the controller fits an MCU
+budget, but they are not a substitute for a hardware measurement. SRAM and flash
+footprints are likewise model estimates: 9--14\,KB SRAM and 58--86\,KB flash
+depending on whether the policy needs the belief filter.
+
+The cost model is intentionally coarse. Its role is to make the utility
+trade-off non-trivial (stronger actions must buy enough detection to justify
+their latency and energy), not to predict a specific board's power draw. A
+deployment would replace \eqref{eq:cost} with a measured profile; the controller
+only consumes the resulting scalar costs.
+
+\subsection{Verification}
+\label{sec:verification}
+
+The invariant layer is verified exhaustively rather than sampled. A unit test
+enumerates all 243 actions for each of the four operation classes and checks
+that the structural mask matches the independent restatement of I1/I2, that the
+conditional mask is a subset of the structural mask for a 41-point grid of
+$\attack\in[0,1]$, and that the admissible set is never empty. A second test
+runs all adaptive policies on a real stream and asserts that no emitted action
+violates I1/I2. Belief normalisation, trust bounds, AUC/TPR helpers, paired
+determinism and the trace-calibration consistency are covered by 23 tests, all
+passing. These tests do not prove the cryptographic mechanisms; they prove that
+the decision layer never selects an action outside the declared envelope.

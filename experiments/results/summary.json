@@ -1,0 +1,6812 @@
+{
+  "scenarios": [
+    "none",
+    "dos",
+    "downgrade",
+    "tee",
+    "energy",
+    "byzantine",
+    "resonant",
+    "adaptive"
+  ],
+  "policies": [
+    "static_high",
+    "static_med",
+    "static_low",
+    "threshold",
+    "risk_only",
+    "invariant_only",
+    "full_no_hyst",
+    "full_no_consistency",
+    "full",
+    "oracle"
+  ],
+  "main": {
+    "none": {
+      "static_high": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.08740364084897316,
+          "std": 0.004303444338304166
+        },
+        "legit_grant": {
+          "mean": 0.9125963591510267,
+          "std": 0.0043034443383041755
+        },
+        "safety_denied": {
+          "mean": 0.08946059963704431,
+          "std": 0.01232391736341351
+        },
+        "utility": {
+          "mean": 0.1213200397324949,
+          "std": 0.003592033765105166
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.7263387374093677,
+          "std": 0.0041592044426938465
+        },
+        "p50_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "p99_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 4.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 28.0,
+          "std": 0.0
+        }
+      },
+      "static_med": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.0240827935342884,
+          "std": 0.00216059223137564
+        },
+        "legit_grant": {
+          "mean": 0.9759172064657115,
+          "std": 0.00216059223137564
+        },
+        "safety_denied": {
+          "mean": 0.03759394823845577,
+          "std": 0.013922801089932376
+        },
+        "utility": {
+          "mean": 0.16224010955468426,
+          "std": 0.002974841822957065
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.4692292458401807,
+          "std": 0.0026853251660553606
+        },
+        "p50_ms": {
+          "mean": 3.4,
+          "std": 0.0
+        },
+        "p99_ms": {
+          "mean": 4.7,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "static_low": {
+        "ivr_per_1k": {
+          "mean": 352.7369974715633,
+          "std": 7.014215986753654
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 997.1324357445646,
+          "std": 1.0828276652234132
+        },
+        "ivr_safety_per_1k": {
+          "mean": 997.568685207634,
+          "std": 3.459363647905357
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.002703828348344262,
+          "std": 0.0004910058521211971
+        },
+        "legit_grant": {
+          "mean": 0.9972961716516557,
+          "std": 0.000491005852121208
+        },
+        "safety_denied": {
+          "mean": 0.0024313147923661115,
+          "std": 0.0034593636479053522
+        },
+        "utility": {
+          "mean": -0.3303744429523835,
+          "std": 0.008974927945417313
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.04682777701621462,
+          "std": 0.00022290719241678682
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "sram_kb": {
+          "mean": 4.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 28.0,
+          "std": 0.0
+        }
+      },
+      "threshold": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.0071687876256627,
+          "std": 0.0011736302133790553
+        },
+        "legit_grant": {
+          "mean": 0.9928312123743372,
+          "std": 0.0011736302133790728
+        },
+        "safety_denied": {
+          "mean": 0.026047397860601774,
+          "std": 0.010582670795483194
+        },
+        "utility": {
+          "mean": 0.1830127617115252,
+          "std": 0.002623560394704362
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 8.642279276151394,
+          "std": 1.809596984817161
+        },
+        "energy_mj": {
+          "mean": 0.21216404575436115,
+          "std": 0.004006264721607315
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 4.499999999999999,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 34.0,
+          "std": 0.0
+        }
+      },
+      "risk_only": {
+        "ivr_per_1k": {
+          "mean": 352.05431269926447,
+          "std": 7.035111954345677
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 994.595819036003,
+          "std": 1.3099959374674854
+        },
+        "ivr_safety_per_1k": {
+          "mean": 997.568685207634,
+          "std": 3.459363647905357
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.0034780198463745687,
+          "std": 0.000607282046378415
+        },
+        "legit_grant": {
+          "mean": 0.9965219801536254,
+          "std": 0.0006072820463784176
+        },
+        "safety_denied": {
+          "mean": 0.0024313147923661115,
+          "std": 0.0034593636479053522
+        },
+        "utility": {
+          "mean": -0.3306164224377038,
+          "std": 0.009059839018243063
+        },
+        "brier": {
+          "mean": 0.002036458965002259,
+          "std": 0.0006822079479353268
+        },
+        "ece": {
+          "mean": 0.00996773175329636,
+          "std": 0.001145159722513097
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 18.670413654076945,
+          "std": 3.890938873091554
+        },
+        "energy_mj": {
+          "mean": 0.05853728724664129,
+          "std": 0.004923436606859882
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 2.654345000000012,
+          "std": 0.5981529618797973
+        },
+        "sram_kb": {
+          "mean": 12.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 74.0,
+          "std": 0.0
+        }
+      },
+      "invariant_only": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.01548333872326943,
+          "std": 0.003165180002247748
+        },
+        "legit_grant": {
+          "mean": 0.9845166612767304,
+          "std": 0.0031651800022477437
+        },
+        "safety_denied": {
+          "mean": 0.026047397860601774,
+          "std": 0.010582670795483194
+        },
+        "utility": {
+          "mean": 0.17923938377849147,
+          "std": 0.0032789232499180533
+        },
+        "brier": {
+          "mean": 0.010478985402658462,
+          "std": 0.000320860291338286
+        },
+        "ece": {
+          "mean": 0.07828383288617483,
+          "std": 0.0014065794377375476
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.5675801446329831,
+          "std": 0.28819390206946605
+        },
+        "energy_mj": {
+          "mean": 0.18875287476142205,
+          "std": 0.015348242551274358
+        },
+        "p50_ms": {
+          "mean": 1.1929999999999998,
+          "std": 0.31847030212145905
+        },
+        "p99_ms": {
+          "mean": 4.2749999999999995,
+          "std": 0.07905694150420947
+        },
+        "sram_kb": {
+          "mean": 9.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 58.0,
+          "std": 0.0
+        }
+      },
+      "full_no_hyst": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.011684831657844005,
+          "std": 0.0031420173602605284
+        },
+        "legit_grant": {
+          "mean": 0.988315168342156,
+          "std": 0.003142017360260519
+        },
+        "safety_denied": {
+          "mean": 0.026047397860601774,
+          "std": 0.010582670795483194
+        },
+        "utility": {
+          "mean": 0.18368261555696216,
+          "std": 0.0032904279384176082
+        },
+        "brier": {
+          "mean": 0.002036458965002259,
+          "std": 0.0006822079479353268
+        },
+        "ece": {
+          "mean": 0.00996773175329636,
+          "std": 0.001145159722513097
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 12.510231931415358,
+          "std": 3.2502116181231644
+        },
+        "energy_mj": {
+          "mean": 0.1788413281563177,
+          "std": 0.011290253139717453
+        },
+        "p50_ms": {
+          "mean": 1.16975,
+          "std": 0.30647967578073876
+        },
+        "p99_ms": {
+          "mean": 4.049999999999999,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "full_no_consistency": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.01755254780930765,
+          "std": 0.0038130374214084633
+        },
+        "legit_grant": {
+          "mean": 0.9824474521906925,
+          "std": 0.0038130374214084494
+        },
+        "safety_denied": {
+          "mean": 0.026047397860601774,
+          "std": 0.010582670795483194
+        },
+        "utility": {
+          "mean": 0.17851989453845976,
+          "std": 0.0026678880357826245
+        },
+        "brier": {
+          "mean": 0.0008380208430478873,
+          "std": 0.00035756833981798154
+        },
+        "ece": {
+          "mean": 0.00770795981023698,
+          "std": 0.0008609385626375782
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 6.922613281507725,
+          "std": 1.8389161842447672
+        },
+        "energy_mj": {
+          "mean": 0.20622101729461345,
+          "std": 0.02087097568617163
+        },
+        "p50_ms": {
+          "mean": 1.4184999999999999,
+          "std": 0.23247222056265854
+        },
+        "p99_ms": {
+          "mean": 4.089999999999999,
+          "std": 0.0516397779494325
+        },
+        "sram_kb": {
+          "mean": 12.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 74.0,
+          "std": 0.0
+        }
+      },
+      "full": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.019611227262062894,
+          "std": 0.0037640279485709597
+        },
+        "legit_grant": {
+          "mean": 0.9803887727379372,
+          "std": 0.0037640279485709584
+        },
+        "safety_denied": {
+          "mean": 0.026047397860601774,
+          "std": 0.010582670795483194
+        },
+        "utility": {
+          "mean": 0.17698467037733484,
+          "std": 0.0033168817371388047
+        },
+        "brier": {
+          "mean": 0.002036458965002259,
+          "std": 0.0006822079479353268
+        },
+        "ece": {
+          "mean": 0.00996773175329636,
+          "std": 0.001145159722513097
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 4.299794840547764,
+          "std": 1.5863735896548312
+        },
+        "energy_mj": {
+          "mean": 0.2194195804238983,
+          "std": 0.01120012537371257
+        },
+        "p50_ms": {
+          "mean": 1.58,
+          "std": 0.06324555320336757
+        },
+        "p99_ms": {
+          "mean": 4.109999999999999,
+          "std": 0.051639777949432496
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "oracle": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.01336263360540102,
+          "std": 0.002139208554148893
+        },
+        "legit_grant": {
+          "mean": 0.9866373663945989,
+          "std": 0.0021392085541488888
+        },
+        "safety_denied": {
+          "mean": 0.026047397860601774,
+          "std": 0.010582670795483194
+        },
+        "utility": {
+          "mean": 0.1815343933488106,
+          "std": 0.002884105407798068
+        },
+        "brier": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 4.127207537344176,
+          "std": 1.2057628563272407
+        },
+        "energy_mj": {
+          "mean": 0.1818671094885833,
+          "std": 0.0032040923083275553
+        },
+        "p50_ms": {
+          "mean": 1.1644999999999999,
+          "std": 0.1547076095233989
+        },
+        "p99_ms": {
+          "mean": 4.049999999999999,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      }
+    },
+    "dos": {
+      "static_high": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.08837077728102137,
+          "std": 0.013617610539109025
+        },
+        "false_deny": {
+          "mean": 0.0903377009023529,
+          "std": 0.0037403858735418783
+        },
+        "legit_grant": {
+          "mean": 0.9096622990976471,
+          "std": 0.0037403858735418727
+        },
+        "safety_denied": {
+          "mean": 0.09467091487421636,
+          "std": 0.014590060897320298
+        },
+        "utility": {
+          "mean": 0.09022247794563845,
+          "std": 0.007315598057619959
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.7296688548933965,
+          "std": 0.003708802922963279
+        },
+        "p50_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "p99_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 4.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 28.0,
+          "std": 0.0
+        }
+      },
+      "static_med": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.3668928654890532,
+          "std": 0.03401919544542226
+        },
+        "false_deny": {
+          "mean": 0.02591584452322419,
+          "std": 0.001723958225447939
+        },
+        "legit_grant": {
+          "mean": 0.9740841554767756,
+          "std": 0.001723958225447945
+        },
+        "safety_denied": {
+          "mean": 0.037440032289625114,
+          "std": 0.010226317191319273
+        },
+        "utility": {
+          "mean": 0.06417482101416047,
+          "std": 0.014863045925343196
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.47507906630235397,
+          "std": 0.0031135591104513175
+        },
+        "p50_ms": {
+          "mean": 3.4,
+          "std": 0.0
+        },
+        "p99_ms": {
+          "mean": 4.7,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "static_low": {
+        "ivr_per_1k": {
+          "mean": 402.5399664867701,
+          "std": 12.156523397812991
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 977.6744171714363,
+          "std": 5.410033070008435
+        },
+        "ivr_safety_per_1k": {
+          "mean": 996.7551324159355,
+          "std": 3.0321731970715726
+        },
+        "unsafe_grant": {
+          "mean": 0.9313836501504238,
+          "std": 0.010572671777398597
+        },
+        "false_deny": {
+          "mean": 0.003325289271285281,
+          "std": 0.000787897465070767
+        },
+        "legit_grant": {
+          "mean": 0.9966747107287148,
+          "std": 0.0007878974650707649
+        },
+        "safety_denied": {
+          "mean": 0.0032448675840646146,
+          "std": 0.0030321731970715782
+        },
+        "utility": {
+          "mean": -0.6292887076787567,
+          "std": 0.035215056903771746
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.04709597069424933,
+          "std": 0.00017316914084702603
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "sram_kb": {
+          "mean": 4.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 28.0,
+          "std": 0.0
+        }
+      },
+      "threshold": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.17825624742870355,
+          "std": 0.018960602337970422
+        },
+        "false_deny": {
+          "mean": 0.030325942383765202,
+          "std": 0.002130460626215281
+        },
+        "legit_grant": {
+          "mean": 0.9696740576162348,
+          "std": 0.002130460626215281
+        },
+        "safety_denied": {
+          "mean": 0.052328181923976556,
+          "std": 0.013920035543305138
+        },
+        "utility": {
+          "mean": 0.10828750152197204,
+          "std": 0.009877739416126447
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 157.2115746675631,
+          "std": 14.154971855067464
+        },
+        "energy_mj": {
+          "mean": 0.36707868459021953,
+          "std": 0.01980638115182714
+        },
+        "p50_ms": {
+          "mean": 1.9679999999999995,
+          "std": 0.06196773353931883
+        },
+        "p99_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 34.0,
+          "std": 0.0
+        }
+      },
+      "risk_only": {
+        "ivr_per_1k": {
+          "mean": 309.44341852022364,
+          "std": 8.714072706144625
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 693.0216170668298,
+          "std": 22.18348428714089
+        },
+        "ivr_safety_per_1k": {
+          "mean": 996.7551324159355,
+          "std": 3.0321731970715726
+        },
+        "unsafe_grant": {
+          "mean": 0.11134007932282883,
+          "std": 0.012935026907477288
+        },
+        "false_deny": {
+          "mean": 0.016940231802071073,
+          "std": 0.0021023098033613593
+        },
+        "legit_grant": {
+          "mean": 0.9830597681979288,
+          "std": 0.002102309803361367
+        },
+        "safety_denied": {
+          "mean": 0.0032448675840646146,
+          "std": 0.0030321731970715782
+        },
+        "utility": {
+          "mean": -0.3156003772373232,
+          "std": 0.012234610029060476
+        },
+        "brier": {
+          "mean": 0.0017549116824863026,
+          "std": 0.0004971496790154804
+        },
+        "ece": {
+          "mean": 0.0057108242807912685,
+          "std": 0.0006300831046336648
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": 0.9999835624493398,
+          "std": 9.159310834154504e-06
+        },
+        "switches_per_1k": {
+          "mean": 12.473562825960625,
+          "std": 1.8726335784977668
+        },
+        "energy_mj": {
+          "mean": 0.12693744065574955,
+          "std": 0.0074388860480011695
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 5.299999999999999,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 12.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 74.0,
+          "std": 0.0
+        }
+      },
+      "invariant_only": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.1820302574489788,
+          "std": 0.017871157234802013
+        },
+        "false_deny": {
+          "mean": 0.03042231353124993,
+          "std": 0.0028161951741757754
+        },
+        "legit_grant": {
+          "mean": 0.9695776864687501,
+          "std": 0.002816195174175771
+        },
+        "safety_denied": {
+          "mean": 0.029853081078318643,
+          "std": 0.009136535347601319
+        },
+        "utility": {
+          "mean": 0.1209194082329648,
+          "std": 0.008610771657006347
+        },
+        "brier": {
+          "mean": 0.08157655310817394,
+          "std": 0.0059233888466739566
+        },
+        "ece": {
+          "mean": 0.20500967566099684,
+          "std": 0.011882671225742596
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": 0.9990961947975864,
+          "std": 0.00034696843211441106
+        },
+        "switches_per_1k": {
+          "mean": 6.478678886347597,
+          "std": 2.4481330757410547
+        },
+        "energy_mj": {
+          "mean": 0.3154277236888191,
+          "std": 0.03388466276846917
+        },
+        "p50_ms": {
+          "mean": 1.9438749999999998,
+          "std": 0.5147492816086939
+        },
+        "p99_ms": {
+          "mean": 5.595000000000001,
+          "std": 0.10916348595875197
+        },
+        "sram_kb": {
+          "mean": 9.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 58.0,
+          "std": 0.0
+        }
+      },
+      "full_no_hyst": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.11034292832567785,
+          "std": 0.012850650983151782
+        },
+        "false_deny": {
+          "mean": 0.02661887601486178,
+          "std": 0.002246471402969742
+        },
+        "legit_grant": {
+          "mean": 0.9733811239851382,
+          "std": 0.0022464714029697434
+        },
+        "safety_denied": {
+          "mean": 0.029853081078318643,
+          "std": 0.009136535347601319
+        },
+        "utility": {
+          "mean": 0.13508119297731727,
+          "std": 0.0062731017831537785
+        },
+        "brier": {
+          "mean": 0.0017549116824863026,
+          "std": 0.0004971496790154804
+        },
+        "ece": {
+          "mean": 0.0057108242807912685,
+          "std": 0.0006300831046336648
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": 0.9999835624493398,
+          "std": 9.159310834154504e-06
+        },
+        "switches_per_1k": {
+          "mean": 11.604844248784005,
+          "std": 1.8652987008436217
+        },
+        "energy_mj": {
+          "mean": 0.2636646559952586,
+          "std": 0.016033557166363097
+        },
+        "p50_ms": {
+          "mean": 1.6195,
+          "std": 0.08531640457080268
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "full_no_consistency": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.11034292832567785,
+          "std": 0.012850650983151782
+        },
+        "false_deny": {
+          "mean": 0.03241573702791291,
+          "std": 0.003034922789430941
+        },
+        "legit_grant": {
+          "mean": 0.9675842629720872,
+          "std": 0.0030349227894309492
+        },
+        "safety_denied": {
+          "mean": 0.029853081078318643,
+          "std": 0.009136535347601319
+        },
+        "utility": {
+          "mean": 0.13060132340917266,
+          "std": 0.006335379781270661
+        },
+        "brier": {
+          "mean": 0.00043302045033838187,
+          "std": 0.00025430969473144423
+        },
+        "ece": {
+          "mean": 0.004327221299217867,
+          "std": 0.0005419755171663033
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 7.7177321873531195,
+          "std": 1.570427277251531
+        },
+        "energy_mj": {
+          "mean": 0.31563353262920757,
+          "std": 0.013481592569085231
+        },
+        "p50_ms": {
+          "mean": 2.678,
+          "std": 0.13306639946532953
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 12.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 74.0,
+          "std": 0.0
+        }
+      },
+      "full": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.11134007932282883,
+          "std": 0.012935026907477288
+        },
+        "false_deny": {
+          "mean": 0.031675853713888244,
+          "std": 0.002925301378987194
+        },
+        "legit_grant": {
+          "mean": 0.9683241462861117,
+          "std": 0.002925301378987178
+        },
+        "safety_denied": {
+          "mean": 0.029853081078318643,
+          "std": 0.009136535347601319
+        },
+        "utility": {
+          "mean": 0.13063182724400435,
+          "std": 0.006265342879048568
+        },
+        "brier": {
+          "mean": 0.0017549116824863026,
+          "std": 0.0004971496790154804
+        },
+        "ece": {
+          "mean": 0.0057108242807912685,
+          "std": 0.0006300831046336648
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": 0.9999835624493398,
+          "std": 9.159310834154504e-06
+        },
+        "switches_per_1k": {
+          "mean": 6.120687943604438,
+          "std": 1.1390584721514874
+        },
+        "energy_mj": {
+          "mean": 0.3125639085230172,
+          "std": 0.013083125444988365
+        },
+        "p50_ms": {
+          "mean": 2.65,
+          "std": 0.14483707321600278
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "oracle": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.11034292832567785,
+          "std": 0.012850650983151782
+        },
+        "false_deny": {
+          "mean": 0.031120550494325917,
+          "std": 0.003537851662801189
+        },
+        "legit_grant": {
+          "mean": 0.9688794495056741,
+          "std": 0.0035378516628011753
+        },
+        "safety_denied": {
+          "mean": 0.029853081078318643,
+          "std": 0.009136535347601319
+        },
+        "utility": {
+          "mean": 0.13158640092814197,
+          "std": 0.006552570853549534
+        },
+        "brier": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_tpr1": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 6.368554684838766,
+          "std": 1.6341846308977193
+        },
+        "energy_mj": {
+          "mean": 0.3098340278504329,
+          "std": 0.015056962513863218
+        },
+        "p50_ms": {
+          "mean": 2.598,
+          "std": 0.3275769629669746
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      }
+    },
+    "downgrade": {
+      "static_high": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.0912855834697649,
+          "std": 0.010825459164586526
+        },
+        "false_deny": {
+          "mean": 0.08921654645522993,
+          "std": 0.003891981397219487
+        },
+        "legit_grant": {
+          "mean": 0.9107834535447701,
+          "std": 0.0038919813972194913
+        },
+        "safety_denied": {
+          "mean": 0.08651866606394101,
+          "std": 0.013583539798317841
+        },
+        "utility": {
+          "mean": 0.08977079533462504,
+          "std": 0.006845632329591946
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.9971103076221283,
+          "std": 0.0009833554710299457
+        },
+        "poison_tpr1": {
+          "mean": 0.9542306449902485,
+          "std": 0.018768950122592658
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.7283344156167436,
+          "std": 0.004802471245917052
+        },
+        "p50_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "p99_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 4.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 28.0,
+          "std": 0.0
+        }
+      },
+      "static_med": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.3572529454447258,
+          "std": 0.020476393299283965
+        },
+        "false_deny": {
+          "mean": 0.023610827416241143,
+          "std": 0.002710382042910284
+        },
+        "legit_grant": {
+          "mean": 0.9763891725837588,
+          "std": 0.0027103820429102837
+        },
+        "safety_denied": {
+          "mean": 0.040896853546795654,
+          "std": 0.0106278808792718
+        },
+        "utility": {
+          "mean": 0.06511452235009597,
+          "std": 0.012565917806119695
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.9971103076221283,
+          "std": 0.0009833554710299457
+        },
+        "poison_tpr1": {
+          "mean": 0.9542306449902485,
+          "std": 0.018768950122592658
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.4732167651995309,
+          "std": 0.004592882326650845
+        },
+        "p50_ms": {
+          "mean": 3.4,
+          "std": 0.0
+        },
+        "p99_ms": {
+          "mean": 4.7,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "static_low": {
+        "ivr_per_1k": {
+          "mean": 402.84949053906934,
+          "std": 9.760216146739264
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 977.474547600123,
+          "std": 3.8652901321744557
+        },
+        "ivr_safety_per_1k": {
+          "mean": 997.8026818508685,
+          "std": 1.8072712088419713
+        },
+        "unsafe_grant": {
+          "mean": 0.9310360874620747,
+          "std": 0.006921132544228877
+        },
+        "false_deny": {
+          "mean": 0.003104394158282794,
+          "std": 0.0005391300357017651
+        },
+        "legit_grant": {
+          "mean": 0.9968956058417172,
+          "std": 0.0005391300357017619
+        },
+        "safety_denied": {
+          "mean": 0.0021973181491317046,
+          "std": 0.0018072712088419637
+        },
+        "utility": {
+          "mean": -0.6323935072596838,
+          "std": 0.023551663610277676
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.9971103076221283,
+          "std": 0.0009833554710299457
+        },
+        "poison_tpr1": {
+          "mean": 0.9542306449902485,
+          "std": 0.018768950122592658
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.04693132103957986,
+          "std": 0.00027355790503542964
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "sram_kb": {
+          "mean": 4.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 28.0,
+          "std": 0.0
+        }
+      },
+      "threshold": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.5726174663415746,
+          "std": 0.023648322735980443
+        },
+        "false_deny": {
+          "mean": 0.008371977832827854,
+          "std": 0.001506540980400036
+        },
+        "legit_grant": {
+          "mean": 0.9916280221671722,
+          "std": 0.001506540980400055
+        },
+        "safety_denied": {
+          "mean": 0.029440898534211175,
+          "std": 0.00986774439929798
+        },
+        "utility": {
+          "mean": 0.05965129380811229,
+          "std": 0.016223625071378558
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.9971103076221283,
+          "std": 0.0009833554710299457
+        },
+        "poison_tpr1": {
+          "mean": 0.9542306449902485,
+          "std": 0.018768950122592658
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 3.8036862183112254,
+          "std": 2.3912581390995813
+        },
+        "energy_mj": {
+          "mean": 0.2212988273366764,
+          "std": 0.005880624839432002
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 4.499999999999999,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 34.0,
+          "std": 0.0
+        }
+      },
+      "risk_only": {
+        "ivr_per_1k": {
+          "mean": 309.4056082655332,
+          "std": 9.878976807663202
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 692.6225017155766,
+          "std": 17.24912276880129
+        },
+        "ivr_safety_per_1k": {
+          "mean": 997.8026818508685,
+          "std": 1.8072712088419713
+        },
+        "unsafe_grant": {
+          "mean": 0.1219151790087748,
+          "std": 0.012955614874514158
+        },
+        "false_deny": {
+          "mean": 0.015865674393994687,
+          "std": 0.002647206810560027
+        },
+        "legit_grant": {
+          "mean": 0.9841343256060053,
+          "std": 0.002647206810560024
+        },
+        "safety_denied": {
+          "mean": 0.0021973181491317046,
+          "std": 0.0018072712088419637
+        },
+        "utility": {
+          "mean": -0.3176443604256725,
+          "std": 0.01018591384550676
+        },
+        "brier": {
+          "mean": 0.0027729130527335798,
+          "std": 0.0012306396872535138
+        },
+        "ece": {
+          "mean": 0.006152505827412077,
+          "std": 0.0008362418052233186
+        },
+        "poison_auroc": {
+          "mean": 0.9971103076221283,
+          "std": 0.0009833554710299457
+        },
+        "poison_tpr1": {
+          "mean": 0.9542306449902485,
+          "std": 0.018768950122592658
+        },
+        "belief_auroc": {
+          "mean": 0.9999514321065961,
+          "std": 4.740064421246161e-05
+        },
+        "switches_per_1k": {
+          "mean": 11.908076021465195,
+          "std": 1.8667491408217778
+        },
+        "energy_mj": {
+          "mean": 0.12678249194396402,
+          "std": 0.006134759752829572
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 5.299999999999999,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 12.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 74.0,
+          "std": 0.0
+        }
+      },
+      "invariant_only": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.3819997930566482,
+          "std": 0.050533638537229364
+        },
+        "false_deny": {
+          "mean": 0.0127449387309783,
+          "std": 0.0036694346024721564
+        },
+        "legit_grant": {
+          "mean": 0.9872550612690217,
+          "std": 0.003669434602472156
+        },
+        "safety_denied": {
+          "mean": 0.029440898534211175,
+          "std": 0.00986774439929798
+        },
+        "utility": {
+          "mean": 0.0898700210754127,
+          "std": 0.013606814997401608
+        },
+        "brier": {
+          "mean": 0.363999491655996,
+          "std": 0.021319553037178432
+        },
+        "ece": {
+          "mean": 0.3711976416753021,
+          "std": 0.026424267503772095
+        },
+        "poison_auroc": {
+          "mean": 0.9971103076221283,
+          "std": 0.0009833554710299457
+        },
+        "poison_tpr1": {
+          "mean": 0.9542306449902485,
+          "std": 0.018768950122592658
+        },
+        "belief_auroc": {
+          "mean": 0.7190598930408477,
+          "std": 0.008782423569792173
+        },
+        "switches_per_1k": {
+          "mean": 0.38469050086172085,
+          "std": 0.18329809326989305
+        },
+        "energy_mj": {
+          "mean": 0.18173603668016186,
+          "std": 0.012131521170423699
+        },
+        "p50_ms": {
+          "mean": 0.9818750000000002,
+          "std": 0.1859129593982685
+        },
+        "p99_ms": {
+          "mean": 4.199999999999999,
+          "std": 0.12909944487358058
+        },
+        "sram_kb": {
+          "mean": 9.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 58.0,
+          "std": 0.0
+        }
+      },
+      "full_no_hyst": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.12055231699855333,
+          "std": 0.013946049954563567
+        },
+        "false_deny": {
+          "mean": 0.02386540039479537,
+          "std": 0.0030145770213032387
+        },
+        "legit_grant": {
+          "mean": 0.9761345996052047,
+          "std": 0.0030145770213032314
+        },
+        "safety_denied": {
+          "mean": 0.029440898534211175,
+          "std": 0.00986774439929798
+        },
+        "utility": {
+          "mean": 0.13301369179252626,
+          "std": 0.007726956854106774
+        },
+        "brier": {
+          "mean": 0.0027729130527335798,
+          "std": 0.0012306396872535138
+        },
+        "ece": {
+          "mean": 0.006152505827412077,
+          "std": 0.0008362418052233186
+        },
+        "poison_auroc": {
+          "mean": 0.9971103076221283,
+          "std": 0.0009833554710299457
+        },
+        "poison_tpr1": {
+          "mean": 0.9542306449902485,
+          "std": 0.018768950122592658
+        },
+        "belief_auroc": {
+          "mean": 0.9999514321065961,
+          "std": 4.740064421246161e-05
+        },
+        "switches_per_1k": {
+          "mean": 11.282770763194245,
+          "std": 2.2041174314421075
+        },
+        "energy_mj": {
+          "mean": 0.26186392696688754,
+          "std": 0.010611946370690127
+        },
+        "p50_ms": {
+          "mean": 1.6337499999999998,
+          "std": 0.08240524861924739
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "full_no_consistency": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.13894247367093418,
+          "std": 0.012206908401979352
+        },
+        "false_deny": {
+          "mean": 0.02674640376525626,
+          "std": 0.003322796840383938
+        },
+        "legit_grant": {
+          "mean": 0.9732535962347437,
+          "std": 0.0033227968403839398
+        },
+        "safety_denied": {
+          "mean": 0.029440898534211175,
+          "std": 0.00986774439929798
+        },
+        "utility": {
+          "mean": 0.12747515974272858,
+          "std": 0.007710758310953542
+        },
+        "brier": {
+          "mean": 0.008422286316205162,
+          "std": 0.0014455145473553264
+        },
+        "ece": {
+          "mean": 0.01546056516777258,
+          "std": 0.0027503629290079527
+        },
+        "poison_auroc": {
+          "mean": 0.9971103076221283,
+          "std": 0.0009833554710299457
+        },
+        "poison_tpr1": {
+          "mean": 0.9542306449902485,
+          "std": 0.018768950122592658
+        },
+        "belief_auroc": {
+          "mean": 0.9998070079950295,
+          "std": 0.00017359916723212052
+        },
+        "switches_per_1k": {
+          "mean": 9.909470498832725,
+          "std": 2.388068372824002
+        },
+        "energy_mj": {
+          "mean": 0.3043466002791044,
+          "std": 0.014729584762749888
+        },
+        "p50_ms": {
+          "mean": 2.552,
+          "std": 0.17138650277467374
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 12.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 74.0,
+          "std": 0.0
+        }
+      },
+      "full": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.1198708859934426,
+          "std": 0.014891102445963974
+        },
+        "false_deny": {
+          "mean": 0.028642028232435345,
+          "std": 0.0030509569645164893
+        },
+        "legit_grant": {
+          "mean": 0.9713579717675647,
+          "std": 0.003050956964516487
+        },
+        "safety_denied": {
+          "mean": 0.029440898534211175,
+          "std": 0.00986774439929798
+        },
+        "utility": {
+          "mean": 0.12897966067022804,
+          "std": 0.00786017790123195
+        },
+        "brier": {
+          "mean": 0.0027729130527335798,
+          "std": 0.0012306396872535138
+        },
+        "ece": {
+          "mean": 0.006152505827412077,
+          "std": 0.0008362418052233186
+        },
+        "poison_auroc": {
+          "mean": 0.9971103076221283,
+          "std": 0.0009833554710299457
+        },
+        "poison_tpr1": {
+          "mean": 0.9542306449902485,
+          "std": 0.018768950122592658
+        },
+        "belief_auroc": {
+          "mean": 0.9999514321065961,
+          "std": 4.740064421246161e-05
+        },
+        "switches_per_1k": {
+          "mean": 5.928471977729762,
+          "std": 1.4662403804992508
+        },
+        "energy_mj": {
+          "mean": 0.30944481916052174,
+          "std": 0.012294099722508089
+        },
+        "p50_ms": {
+          "mean": 2.55,
+          "std": 0.15916448515084414
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "oracle": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.11308989269466763,
+          "std": 0.012443101519202814
+        },
+        "false_deny": {
+          "mean": 0.028929460746446905,
+          "std": 0.003097561642460497
+        },
+        "legit_grant": {
+          "mean": 0.971070539253553,
+          "std": 0.0030975616424604897
+        },
+        "safety_denied": {
+          "mean": 0.029440898534211175,
+          "std": 0.00986774439929798
+        },
+        "utility": {
+          "mean": 0.13027829561486842,
+          "std": 0.007818437035809058
+        },
+        "brier": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.9971103076221283,
+          "std": 0.0009833554710299457
+        },
+        "poison_tpr1": {
+          "mean": 0.9542306449902485,
+          "std": 0.018768950122592658
+        },
+        "belief_auroc": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 5.573761309454256,
+          "std": 1.3641825529841671
+        },
+        "energy_mj": {
+          "mean": 0.3024037553289094,
+          "std": 0.014872049524745069
+        },
+        "p50_ms": {
+          "mean": 2.526,
+          "std": 0.31732212865372833
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      }
+    },
+    "tee": {
+      "static_high": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.2648269715359592,
+          "std": 0.022861920811486528
+        },
+        "false_deny": {
+          "mean": 0.0874780460230363,
+          "std": 0.008626460966405063
+        },
+        "legit_grant": {
+          "mean": 0.9125219539769637,
+          "std": 0.008626460966405056
+        },
+        "safety_denied": {
+          "mean": 0.085636182122418,
+          "std": 0.020366089636284394
+        },
+        "utility": {
+          "mean": 0.05310249934811588,
+          "std": 0.01217904687743269
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.2731025183850024,
+          "std": 0.0050913405672125015
+        },
+        "poison_tpr1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.7268747952175187,
+          "std": 0.004527814299052791
+        },
+        "p50_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "p99_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 4.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 28.0,
+          "std": 0.0
+        }
+      },
+      "static_med": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.55407010412653,
+          "std": 0.021319565001827665
+        },
+        "false_deny": {
+          "mean": 0.023543203849070278,
+          "std": 0.003728360411066517
+        },
+        "legit_grant": {
+          "mean": 0.9764567961509296,
+          "std": 0.0037283604110665406
+        },
+        "safety_denied": {
+          "mean": 0.03743344022341429,
+          "std": 0.011748468671087526
+        },
+        "utility": {
+          "mean": 0.024940299913748593,
+          "std": 0.01695954398046215
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.2731025183850024,
+          "std": 0.0050913405672125015
+        },
+        "poison_tpr1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.47175597564288696,
+          "std": 0.0032792590969236137
+        },
+        "p50_ms": {
+          "mean": 3.4,
+          "std": 0.0
+        },
+        "p99_ms": {
+          "mean": 4.7,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "static_low": {
+        "ivr_per_1k": {
+          "mean": 398.3612287421627,
+          "std": 8.858007542276564
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 975.6631066944076,
+          "std": 4.8727792983136675
+        },
+        "ivr_safety_per_1k": {
+          "mean": 996.420283437182,
+          "std": 3.3663474623266474
+        },
+        "unsafe_grant": {
+          "mean": 0.9278852154281104,
+          "std": 0.012342847825286093
+        },
+        "false_deny": {
+          "mean": 0.002885757141452295,
+          "std": 0.0008269511483948941
+        },
+        "legit_grant": {
+          "mean": 0.9971142428585477,
+          "std": 0.0008269511483948999
+        },
+        "safety_denied": {
+          "mean": 0.00357971656281801,
+          "std": 0.003366347462326636
+        },
+        "utility": {
+          "mean": -0.6204296733872919,
+          "std": 0.03411222100331634
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.2731025183850024,
+          "std": 0.0050913405672125015
+        },
+        "poison_tpr1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.04690712630346945,
+          "std": 0.0002580427706140184
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "sram_kb": {
+          "mean": 4.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 28.0,
+          "std": 0.0
+        }
+      },
+      "threshold": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.694965610125643,
+          "std": 0.01886717185550017
+        },
+        "false_deny": {
+          "mean": 0.008101620255904376,
+          "std": 0.0017282077717362134
+        },
+        "legit_grant": {
+          "mean": 0.9918983797440957,
+          "std": 0.0017282077717362075
+        },
+        "safety_denied": {
+          "mean": 0.028325374919066042,
+          "std": 0.0077179804469211695
+        },
+        "utility": {
+          "mean": 0.02777117497148666,
+          "std": 0.01778645159421107
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.2731025183850024,
+          "std": 0.0050913405672125015
+        },
+        "poison_tpr1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 5.586471752870761,
+          "std": 2.111481134668915
+        },
+        "energy_mj": {
+          "mean": 0.22417483068695393,
+          "std": 0.0036539112415405754
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 4.499999999999999,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 34.0,
+          "std": 0.0
+        }
+      },
+      "risk_only": {
+        "ivr_per_1k": {
+          "mean": 391.5178664079477,
+          "std": 8.330015831315903
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 954.6410845637031,
+          "std": 24.13120246646177
+        },
+        "ivr_safety_per_1k": {
+          "mean": 996.420283437182,
+          "std": 3.3663474623266474
+        },
+        "unsafe_grant": {
+          "mean": 0.8848227042806274,
+          "std": 0.04681794487658627
+        },
+        "false_deny": {
+          "mean": 0.0036304189606935883,
+          "std": 0.0009934314558363115
+        },
+        "legit_grant": {
+          "mean": 0.9963695810393064,
+          "std": 0.0009934314558363022
+        },
+        "safety_denied": {
+          "mean": 0.00357971656281801,
+          "std": 0.003366347462326636
+        },
+        "utility": {
+          "mean": -0.5986667123276298,
+          "std": 0.03605805375325449
+        },
+        "brier": {
+          "mean": 0.436662128975405,
+          "std": 0.0408416645996095
+        },
+        "ece": {
+          "mean": 0.4353287352578715,
+          "std": 0.04111925702704552
+        },
+        "poison_auroc": {
+          "mean": 0.2731025183850024,
+          "std": 0.0050913405672125015
+        },
+        "poison_tpr1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": 0.209918547328439,
+          "std": 0.013176370676979507
+        },
+        "switches_per_1k": {
+          "mean": 11.576283659658847,
+          "std": 2.31140933931455
+        },
+        "energy_mj": {
+          "mean": 0.05689597713386938,
+          "std": 0.005035389438563277
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 1.7790699999999835,
+          "std": 0.3502570042126078
+        },
+        "sram_kb": {
+          "mean": 12.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 74.0,
+          "std": 0.0
+        }
+      },
+      "invariant_only": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.5449021397424196,
+          "std": 0.0770677893615046
+        },
+        "false_deny": {
+          "mean": 0.01392175199094314,
+          "std": 0.0021547805215110967
+        },
+        "legit_grant": {
+          "mean": 0.9860782480090569,
+          "std": 0.002154780521511104
+        },
+        "safety_denied": {
+          "mean": 0.028049131825143393,
+          "std": 0.008009510394354238
+        },
+        "utility": {
+          "mean": 0.05867400038404248,
+          "std": 0.0226758362487987
+        },
+        "brier": {
+          "mean": 0.36036303705167827,
+          "std": 0.03287162907774497
+        },
+        "ece": {
+          "mean": 0.36043183740538814,
+          "std": 0.0394424375636447
+        },
+        "poison_auroc": {
+          "mean": 0.2731025183850024,
+          "std": 0.0050913405672125015
+        },
+        "poison_tpr1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": 0.6522437729695308,
+          "std": 0.008823840517910806
+        },
+        "switches_per_1k": {
+          "mean": 0.5438528413663295,
+          "std": 0.2469348348859025
+        },
+        "energy_mj": {
+          "mean": 0.19023257391531992,
+          "std": 0.01619288922265806
+        },
+        "p50_ms": {
+          "mean": 1.1465,
+          "std": 0.317525589519963
+        },
+        "p99_ms": {
+          "mean": 4.22,
+          "std": 0.10593499054713781
+        },
+        "sram_kb": {
+          "mean": 9.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 58.0,
+          "std": 0.0
+        }
+      },
+      "full_no_hyst": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.694965610125643,
+          "std": 0.01886717185550017
+        },
+        "false_deny": {
+          "mean": 0.011408486175524774,
+          "std": 0.0032526282743505453
+        },
+        "legit_grant": {
+          "mean": 0.9885915138244752,
+          "std": 0.0032526282743505493
+        },
+        "safety_denied": {
+          "mean": 0.028049131825143393,
+          "std": 0.008009510394354238
+        },
+        "utility": {
+          "mean": 0.029533667766695255,
+          "std": 0.01771001492902858
+        },
+        "brier": {
+          "mean": 0.436662128975405,
+          "std": 0.0408416645996095
+        },
+        "ece": {
+          "mean": 0.4353287352578715,
+          "std": 0.04111925702704552
+        },
+        "poison_auroc": {
+          "mean": 0.2731025183850024,
+          "std": 0.0050913405672125015
+        },
+        "poison_tpr1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": 0.209918547328439,
+          "std": 0.013176370676979507
+        },
+        "switches_per_1k": {
+          "mean": 8.25167980886163,
+          "std": 2.389735149241466
+        },
+        "energy_mj": {
+          "mean": 0.17377450710998435,
+          "std": 0.013661298878768725
+        },
+        "p50_ms": {
+          "mean": 1.1285,
+          "std": 0.3264778365797253
+        },
+        "p99_ms": {
+          "mean": 4.049999999999999,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "full_no_consistency": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.4928895791768152,
+          "std": 0.07232617763653741
+        },
+        "false_deny": {
+          "mean": 0.014982595342836968,
+          "std": 0.0033639073267963397
+        },
+        "legit_grant": {
+          "mean": 0.9850174046571629,
+          "std": 0.003363907326796339
+        },
+        "safety_denied": {
+          "mean": 0.028049131825143393,
+          "std": 0.008009510394354238
+        },
+        "utility": {
+          "mean": 0.05307225715310941,
+          "std": 0.0214842043364388
+        },
+        "brier": {
+          "mean": 0.4358841666934533,
+          "std": 0.040871896381288
+        },
+        "ece": {
+          "mean": 0.4340021472453731,
+          "std": 0.041101801132531805
+        },
+        "poison_auroc": {
+          "mean": 0.2731025183850024,
+          "std": 0.0050913405672125015
+        },
+        "poison_tpr1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": 0.2848703246982577,
+          "std": 0.009496410775239572
+        },
+        "switches_per_1k": {
+          "mean": 4.772956254590913,
+          "std": 1.3260632264721595
+        },
+        "energy_mj": {
+          "mean": 0.19681270778991738,
+          "std": 0.014794303883881836
+        },
+        "p50_ms": {
+          "mean": 1.29225,
+          "std": 0.23626859127319963
+        },
+        "p99_ms": {
+          "mean": 4.069999999999999,
+          "std": 0.042163702135578615
+        },
+        "sram_kb": {
+          "mean": 12.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 74.0,
+          "std": 0.0
+        }
+      },
+      "full": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.4728058090431369,
+          "std": 0.06324578399877356
+        },
+        "false_deny": {
+          "mean": 0.018005753945047498,
+          "std": 0.003889189446737507
+        },
+        "legit_grant": {
+          "mean": 0.9819942460549524,
+          "std": 0.0038891894467374954
+        },
+        "safety_denied": {
+          "mean": 0.028049131825143393,
+          "std": 0.008009510394354238
+        },
+        "utility": {
+          "mean": 0.05756540631973235,
+          "std": 0.013784392451186865
+        },
+        "brier": {
+          "mean": 0.436662128975405,
+          "std": 0.0408416645996095
+        },
+        "ece": {
+          "mean": 0.4353287352578715,
+          "std": 0.04111925702704552
+        },
+        "poison_auroc": {
+          "mean": 0.2731025183850024,
+          "std": 0.0050913405672125015
+        },
+        "poison_tpr1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": 0.209918547328439,
+          "std": 0.013176370676979507
+        },
+        "switches_per_1k": {
+          "mean": 3.3682984760155628,
+          "std": 1.5144836511067683
+        },
+        "energy_mj": {
+          "mean": 0.21307855515951699,
+          "std": 0.017710509028551348
+        },
+        "p50_ms": {
+          "mean": 1.4842499999999998,
+          "std": 0.24127568947851613
+        },
+        "p99_ms": {
+          "mean": 4.089999999999999,
+          "std": 0.0516397779494325
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "oracle": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.2961911892327017,
+          "std": 0.022237524266079837
+        },
+        "false_deny": {
+          "mean": 0.026235290156369863,
+          "std": 0.0035466844073084075
+        },
+        "legit_grant": {
+          "mean": 0.97376470984363,
+          "std": 0.003546684407308421
+        },
+        "safety_denied": {
+          "mean": 0.028049131825143393,
+          "std": 0.008009510394354238
+        },
+        "utility": {
+          "mean": 0.09319722671748609,
+          "std": 0.010580279627010199
+        },
+        "brier": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.2731025183850024,
+          "std": 0.0050913405672125015
+        },
+        "poison_tpr1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 6.0834156759253215,
+          "std": 1.2941367183552377
+        },
+        "energy_mj": {
+          "mean": 0.31076505646462377,
+          "std": 0.012753394694181117
+        },
+        "p50_ms": {
+          "mean": 2.5629999999999997,
+          "std": 0.21291886822084213
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      }
+    },
+    "energy": {
+      "static_high": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.0887069862229666,
+          "std": 0.0028591442021191254
+        },
+        "legit_grant": {
+          "mean": 0.9112930137770334,
+          "std": 0.002859144202119114
+        },
+        "safety_denied": {
+          "mean": 0.08248363826613164,
+          "std": 0.014296325197375694
+        },
+        "utility": {
+          "mean": 0.12232253355691122,
+          "std": 0.005523727075749798
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.9999679428559574,
+          "std": 4.4513470082605646e-05
+        },
+        "poison_tpr1": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.7264394645183723,
+          "std": 0.0036611266867529173
+        },
+        "p50_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "p99_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 4.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 28.0,
+          "std": 0.0
+        }
+      },
+      "static_med": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.02539600645924594,
+          "std": 0.0023577432057691715
+        },
+        "legit_grant": {
+          "mean": 0.9746039935407541,
+          "std": 0.0023577432057691854
+        },
+        "safety_denied": {
+          "mean": 0.039417615780826455,
+          "std": 0.010837752080058641
+        },
+        "utility": {
+          "mean": 0.16170171646235593,
+          "std": 0.004185530559291546
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.9999679428559574,
+          "std": 4.4513470082605646e-05
+        },
+        "poison_tpr1": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.4699592706927934,
+          "std": 0.002104715003209208
+        },
+        "p50_ms": {
+          "mean": 3.4,
+          "std": 0.0
+        },
+        "p99_ms": {
+          "mean": 4.7,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "static_low": {
+        "ivr_per_1k": {
+          "mean": 347.0313312528809,
+          "std": 6.616568951264095
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 997.1395473682456,
+          "std": 1.4405080543991267
+        },
+        "ivr_safety_per_1k": {
+          "mean": 995.9744451255576,
+          "std": 4.998407328186085
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.0031016075918711035,
+          "std": 0.0006655976222671451
+        },
+        "legit_grant": {
+          "mean": 0.9968983924081289,
+          "std": 0.0006655976222671439
+        },
+        "safety_denied": {
+          "mean": 0.004025554874442408,
+          "std": 0.004998407328186069
+        },
+        "utility": {
+          "mean": -0.32182209766306624,
+          "std": 0.006934461802164224
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.9999679428559574,
+          "std": 4.4513470082605646e-05
+        },
+        "poison_tpr1": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.04684486464081894,
+          "std": 0.00020279598713735214
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "sram_kb": {
+          "mean": 4.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 28.0,
+          "std": 0.0
+        }
+      },
+      "threshold": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.04418303063214593,
+          "std": 0.003924365537650862
+        },
+        "legit_grant": {
+          "mean": 0.9558169693678542,
+          "std": 0.003924365537650884
+        },
+        "safety_denied": {
+          "mean": 0.05266165872102382,
+          "std": 0.011555799581802388
+        },
+        "utility": {
+          "mean": 0.1554632507789976,
+          "std": 0.005957250563774243
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.9999679428559574,
+          "std": 4.4513470082605646e-05
+        },
+        "poison_tpr1": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 6.294946183036287,
+          "std": 0.6630937377917083
+        },
+        "energy_mj": {
+          "mean": 0.4327847141158917,
+          "std": 0.022515397355192437
+        },
+        "p50_ms": {
+          "mean": 2.5499999999999994,
+          "std": 0.5082650227325636
+        },
+        "p99_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 34.0,
+          "std": 0.0
+        }
+      },
+      "risk_only": {
+        "ivr_per_1k": {
+          "mean": 342.74571766962174,
+          "std": 6.710993040193069
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 980.8102991689736,
+          "std": 5.219743200187932
+        },
+        "ivr_safety_per_1k": {
+          "mean": 995.9744451255576,
+          "std": 4.998407328186085
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.00994740656276849,
+          "std": 0.0018978266222768603
+        },
+        "legit_grant": {
+          "mean": 0.9900525934372315,
+          "std": 0.0018978266222768507
+        },
+        "safety_denied": {
+          "mean": 0.004025554874442408,
+          "std": 0.004998407328186069
+        },
+        "utility": {
+          "mean": -0.3229455444459788,
+          "std": 0.00698665669077693
+        },
+        "brier": {
+          "mean": 0.003246112782692603,
+          "std": 0.001215759986979306
+        },
+        "ece": {
+          "mean": 0.014530044055099233,
+          "std": 0.0020679825230862123
+        },
+        "poison_auroc": {
+          "mean": 0.9999679428559574,
+          "std": 4.4513470082605646e-05
+        },
+        "poison_tpr1": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 20.261064666335166,
+          "std": 1.8747135024086408
+        },
+        "energy_mj": {
+          "mean": 0.10158908785751679,
+          "std": 0.00588391488860981
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 4.9,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 12.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 74.0,
+          "std": 0.0
+        }
+      },
+      "invariant_only": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.030478719665164987,
+          "std": 0.004240971333931576
+        },
+        "legit_grant": {
+          "mean": 0.969521280334835,
+          "std": 0.004240971333931557
+        },
+        "safety_denied": {
+          "mean": 0.02883440223579094,
+          "std": 0.009589752618885023
+        },
+        "utility": {
+          "mean": 0.16699672999169524,
+          "std": 0.004833446638252478
+        },
+        "brier": {
+          "mean": 0.29635089024270705,
+          "std": 0.02915825599846066
+        },
+        "ece": {
+          "mean": 0.40522173969470154,
+          "std": 0.0335637590593814
+        },
+        "poison_auroc": {
+          "mean": 0.9999679428559574,
+          "std": 4.4513470082605646e-05
+        },
+        "poison_tpr1": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.7697216909004102,
+          "std": 0.1132152062916309
+        },
+        "energy_mj": {
+          "mean": 0.2881166243536229,
+          "std": 0.020795236020464004
+        },
+        "p50_ms": {
+          "mean": 1.6,
+          "std": 0.0
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 9.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 58.0,
+          "std": 0.0
+        }
+      },
+      "full_no_hyst": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.017068594850789362,
+          "std": 0.003085273049745384
+        },
+        "legit_grant": {
+          "mean": 0.9829314051492106,
+          "std": 0.003085273049745363
+        },
+        "safety_denied": {
+          "mean": 0.02883440223579094,
+          "std": 0.009589752618885023
+        },
+        "utility": {
+          "mean": 0.17857885197964996,
+          "std": 0.004198657524184391
+        },
+        "brier": {
+          "mean": 0.003246112782692603,
+          "std": 0.001215759986979306
+        },
+        "ece": {
+          "mean": 0.014530044055099233,
+          "std": 0.0020679825230862123
+        },
+        "poison_auroc": {
+          "mean": 0.9999679428559574,
+          "std": 4.4513470082605646e-05
+        },
+        "poison_tpr1": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 18.088748790598654,
+          "std": 2.214266256427915
+        },
+        "energy_mj": {
+          "mean": 0.21071516692246733,
+          "std": 0.015262144005284101
+        },
+        "p50_ms": {
+          "mean": 1.4164999999999999,
+          "std": 0.28633507954453963
+        },
+        "p99_ms": {
+          "mean": 5.450000000000001,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "full_no_consistency": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.03171174133615716,
+          "std": 0.002729288065574208
+        },
+        "legit_grant": {
+          "mean": 0.9682882586638429,
+          "std": 0.0027292880655742035
+        },
+        "safety_denied": {
+          "mean": 0.02883440223579094,
+          "std": 0.009589752618885023
+        },
+        "utility": {
+          "mean": 0.16615810967484151,
+          "std": 0.005377004108657332
+        },
+        "brier": {
+          "mean": 0.4553404342931907,
+          "std": 0.046188105678091874
+        },
+        "ece": {
+          "mean": 0.45885935959264285,
+          "std": 0.04592019490731876
+        },
+        "poison_auroc": {
+          "mean": 0.9999679428559574,
+          "std": 4.4513470082605646e-05
+        },
+        "poison_tpr1": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 4.897659895702097,
+          "std": 1.010717245889294
+        },
+        "energy_mj": {
+          "mean": 0.31671897898542,
+          "std": 0.010501499517500847
+        },
+        "p50_ms": {
+          "mean": 2.658,
+          "std": 0.12514880032274459
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 12.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 74.0,
+          "std": 0.0
+        }
+      },
+      "full": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.023174465085967506,
+          "std": 0.0031892548581088343
+        },
+        "legit_grant": {
+          "mean": 0.9768255349140326,
+          "std": 0.003189254858108826
+        },
+        "safety_denied": {
+          "mean": 0.02883440223579094,
+          "std": 0.009589752618885023
+        },
+        "utility": {
+          "mean": 0.17371825302685492,
+          "std": 0.004461493498578616
+        },
+        "brier": {
+          "mean": 0.003246112782692603,
+          "std": 0.001215759986979306
+        },
+        "ece": {
+          "mean": 0.014530044055099233,
+          "std": 0.0020679825230862123
+        },
+        "poison_auroc": {
+          "mean": 0.9999679428559574,
+          "std": 4.4513470082605646e-05
+        },
+        "poison_tpr1": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 8.163017183621568,
+          "std": 1.921366648127672
+        },
+        "energy_mj": {
+          "mean": 0.2484618366860707,
+          "std": 0.01664116289827269
+        },
+        "p50_ms": {
+          "mean": 1.526,
+          "std": 0.12509551905999228
+        },
+        "p99_ms": {
+          "mean": 5.450000000000001,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "oracle": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_deny": {
+          "mean": 0.008130303904198789,
+          "std": 0.0012884539026290474
+        },
+        "legit_grant": {
+          "mean": 0.9918696960958012,
+          "std": 0.0012884539026290515
+        },
+        "safety_denied": {
+          "mean": 0.02883440223579094,
+          "std": 0.009589752618885023
+        },
+        "utility": {
+          "mean": 0.18557637315081763,
+          "std": 0.004273637732283005
+        },
+        "brier": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.9999679428559574,
+          "std": 4.4513470082605646e-05
+        },
+        "poison_tpr1": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.14657408681117806,
+          "std": 0.00256634115146608
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 4.049999999999999,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      }
+    },
+    "byzantine": {
+      "static_high": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.2528833635474581,
+          "std": 0.021018136429481082
+        },
+        "false_deny": {
+          "mean": 0.0889907031848426,
+          "std": 0.004533469116111203
+        },
+        "legit_grant": {
+          "mean": 0.9110092968151573,
+          "std": 0.004533469116111213
+        },
+        "safety_denied": {
+          "mean": 0.09070780965080935,
+          "std": 0.012048098198389727
+        },
+        "utility": {
+          "mean": 0.057302656663561435,
+          "std": 0.008303078101538698
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.8544795676879794,
+          "std": 0.011349513754716831
+        },
+        "poison_tpr1": {
+          "mean": 0.6771090169036673,
+          "std": 0.015713578394114823
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.7287132360937563,
+          "std": 0.003030922020483824
+        },
+        "p50_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "p99_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 4.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 28.0,
+          "std": 0.0
+        }
+      },
+      "static_med": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.5412587953132405,
+          "std": 0.016727298439274056
+        },
+        "false_deny": {
+          "mean": 0.024847678491731605,
+          "std": 0.0021213796966881465
+        },
+        "legit_grant": {
+          "mean": 0.9751523215082682,
+          "std": 0.0021213796966881304
+        },
+        "safety_denied": {
+          "mean": 0.040706547805057156,
+          "std": 0.01039519131093187
+        },
+        "utility": {
+          "mean": 0.0330559168549233,
+          "std": 0.015919657811759375
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.8544795676879794,
+          "std": 0.011349513754716831
+        },
+        "poison_tpr1": {
+          "mean": 0.6771090169036673,
+          "std": 0.015713578394114823
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.4721506578103664,
+          "std": 0.0016085291211457014
+        },
+        "p50_ms": {
+          "mean": 3.4,
+          "std": 0.0
+        },
+        "p99_ms": {
+          "mean": 4.7,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "static_low": {
+        "ivr_per_1k": {
+          "mean": 396.1009296182115,
+          "std": 6.468335681983262
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 979.8400455647773,
+          "std": 3.5924860048676908
+        },
+        "ivr_safety_per_1k": {
+          "mean": 996.7452096060299,
+          "std": 2.781252909874988
+        },
+        "unsafe_grant": {
+          "mean": 0.9377878067475441,
+          "std": 0.010026933214187683
+        },
+        "false_deny": {
+          "mean": 0.0031238147385139643,
+          "std": 0.0009527645639100124
+        },
+        "legit_grant": {
+          "mean": 0.9968761852614859,
+          "std": 0.0009527645639100189
+        },
+        "safety_denied": {
+          "mean": 0.0032547903939702054,
+          "std": 0.00278125290987498
+        },
+        "utility": {
+          "mean": -0.6078212960243666,
+          "std": 0.03117581686241158
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.8544795676879794,
+          "std": 0.011349513754716831
+        },
+        "poison_tpr1": {
+          "mean": 0.6771090169036673,
+          "std": 0.015713578394114823
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.046985072498617296,
+          "std": 0.00019834724334975843
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "sram_kb": {
+          "mean": 4.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 28.0,
+          "std": 0.0
+        }
+      },
+      "threshold": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.6866467093053243,
+          "std": 0.015878388587729966
+        },
+        "false_deny": {
+          "mean": 0.008390798632743198,
+          "std": 0.0015236769328989715
+        },
+        "legit_grant": {
+          "mean": 0.9916092013672568,
+          "std": 0.001523676932898982
+        },
+        "safety_denied": {
+          "mean": 0.030579179075340534,
+          "std": 0.010628915687433247
+        },
+        "utility": {
+          "mean": 0.038601634695238904,
+          "std": 0.017264272798994503
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.8544795676879794,
+          "std": 0.011349513754716831
+        },
+        "poison_tpr1": {
+          "mean": 0.6771090169036673,
+          "std": 0.015713578394114823
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.683461782386882,
+          "std": 0.8083288944334522
+        },
+        "energy_mj": {
+          "mean": 0.22064864685749425,
+          "std": 0.002856343039609047
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 4.499999999999999,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 34.0,
+          "std": 0.0
+        }
+      },
+      "risk_only": {
+        "ivr_per_1k": {
+          "mean": 326.41147215262725,
+          "std": 6.3753903102189025
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 761.8068036905119,
+          "std": 22.54073030560094
+        },
+        "ivr_safety_per_1k": {
+          "mean": 996.7452096060299,
+          "std": 2.781252909874988
+        },
+        "unsafe_grant": {
+          "mean": 0.3019374958269522,
+          "std": 0.018982114172525
+        },
+        "false_deny": {
+          "mean": 0.012701646681008063,
+          "std": 0.0014729925719825453
+        },
+        "legit_grant": {
+          "mean": 0.9872983533189919,
+          "std": 0.0014729925719825353
+        },
+        "safety_denied": {
+          "mean": 0.0032547903939702054,
+          "std": 0.00278125290987498
+        },
+        "utility": {
+          "mean": -0.37632011538497045,
+          "std": 0.011914524128243991
+        },
+        "brier": {
+          "mean": 0.02983276626951135,
+          "std": 0.0056547441206496775
+        },
+        "ece": {
+          "mean": 0.04272268079525087,
+          "std": 0.007743111487771398
+        },
+        "poison_auroc": {
+          "mean": 0.8544795676879794,
+          "std": 0.011349513754716831
+        },
+        "poison_tpr1": {
+          "mean": 0.6771090169036673,
+          "std": 0.015713578394114823
+        },
+        "belief_auroc": {
+          "mean": 0.9974787651758301,
+          "std": 0.001144385772702841
+        },
+        "switches_per_1k": {
+          "mean": 25.784934799328788,
+          "std": 6.2414080529602645
+        },
+        "energy_mj": {
+          "mean": 0.12049808806318307,
+          "std": 0.008433914694854643
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 5.299999999999999,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 12.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 74.0,
+          "std": 0.0
+        }
+      },
+      "invariant_only": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.6311663942255886,
+          "std": 0.02975501925694383
+        },
+        "false_deny": {
+          "mean": 0.011450856946407895,
+          "std": 0.001611527992583715
+        },
+        "legit_grant": {
+          "mean": 0.9885491430535922,
+          "std": 0.0016115279925837105
+        },
+        "safety_denied": {
+          "mean": 0.030579179075340534,
+          "std": 0.010628915687433247
+        },
+        "utility": {
+          "mean": 0.04762994082419007,
+          "std": 0.016911654855921693
+        },
+        "brier": {
+          "mean": 0.3538594549193562,
+          "std": 0.03583469058334338
+        },
+        "ece": {
+          "mean": 0.3391464789602388,
+          "std": 0.043372432668955886
+        },
+        "poison_auroc": {
+          "mean": 0.8544795676879794,
+          "std": 0.011349513754716831
+        },
+        "poison_tpr1": {
+          "mean": 0.6771090169036673,
+          "std": 0.015713578394114823
+        },
+        "belief_auroc": {
+          "mean": 0.5955968425628495,
+          "std": 0.00864486410642921
+        },
+        "switches_per_1k": {
+          "mean": 0.20527687583414939,
+          "std": 0.07217363812445278
+        },
+        "energy_mj": {
+          "mean": 0.16430948433963094,
+          "std": 0.009273553928753737
+        },
+        "p50_ms": {
+          "mean": 0.9432499999999999,
+          "std": 0.07720868186645558
+        },
+        "p99_ms": {
+          "mean": 4.049999999999999,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 9.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 58.0,
+          "std": 0.0
+        }
+      },
+      "full_no_hyst": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.2990146629182531,
+          "std": 0.018490892728239554
+        },
+        "false_deny": {
+          "mean": 0.02797787661178771,
+          "std": 0.004344550170433522
+        },
+        "legit_grant": {
+          "mean": 0.9720221233882123,
+          "std": 0.00434455017043354
+        },
+        "safety_denied": {
+          "mean": 0.030579179075340534,
+          "std": 0.010628915687433247
+        },
+        "utility": {
+          "mean": 0.1002791364450956,
+          "std": 0.011170082782094819
+        },
+        "brier": {
+          "mean": 0.02983276626951135,
+          "std": 0.0056547441206496775
+        },
+        "ece": {
+          "mean": 0.04272268079525087,
+          "std": 0.007743111487771398
+        },
+        "poison_auroc": {
+          "mean": 0.8544795676879794,
+          "std": 0.011349513754716831
+        },
+        "poison_tpr1": {
+          "mean": 0.6771090169036673,
+          "std": 0.015713578394114823
+        },
+        "belief_auroc": {
+          "mean": 0.9974787651758301,
+          "std": 0.001144385772702841
+        },
+        "switches_per_1k": {
+          "mean": 39.45188727719777,
+          "std": 8.553898452471344
+        },
+        "energy_mj": {
+          "mean": 0.2481574082552386,
+          "std": 0.01368192227866145
+        },
+        "p50_ms": {
+          "mean": 1.4412499999999997,
+          "std": 0.2640108636232818
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "full_no_consistency": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.294277683618303,
+          "std": 0.01907846883415764
+        },
+        "false_deny": {
+          "mean": 0.02607937028550339,
+          "std": 0.0022190130872332126
+        },
+        "legit_grant": {
+          "mean": 0.9739206297144966,
+          "std": 0.002219013087233224
+        },
+        "safety_denied": {
+          "mean": 0.030579179075340534,
+          "std": 0.010628915687433247
+        },
+        "utility": {
+          "mean": 0.09679900907530872,
+          "std": 0.009938623651047106
+        },
+        "brier": {
+          "mean": 0.0312526575381076,
+          "std": 0.00559682733654714
+        },
+        "ece": {
+          "mean": 0.04622611225093756,
+          "std": 0.007952927652396465
+        },
+        "poison_auroc": {
+          "mean": 0.8544795676879794,
+          "std": 0.011349513754716831
+        },
+        "poison_tpr1": {
+          "mean": 0.6771090169036673,
+          "std": 0.015713578394114823
+        },
+        "belief_auroc": {
+          "mean": 0.9975308973259303,
+          "std": 0.001116462203354274
+        },
+        "switches_per_1k": {
+          "mean": 14.672710316032394,
+          "std": 2.6303632525523017
+        },
+        "energy_mj": {
+          "mean": 0.3016315916542561,
+          "std": 0.011571568947931004
+        },
+        "p50_ms": {
+          "mean": 2.4557499999999997,
+          "std": 0.19767414966161964
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 12.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 74.0,
+          "std": 0.0
+        }
+      },
+      "full": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.2926756236196682,
+          "std": 0.018875513163256745
+        },
+        "false_deny": {
+          "mean": 0.02609686117431977,
+          "std": 0.0023413842825669114
+        },
+        "legit_grant": {
+          "mean": 0.9739031388256801,
+          "std": 0.0023413842825669123
+        },
+        "safety_denied": {
+          "mean": 0.030579179075340534,
+          "std": 0.010628915687433247
+        },
+        "utility": {
+          "mean": 0.09711811478751178,
+          "std": 0.009688294432231325
+        },
+        "brier": {
+          "mean": 0.02983276626951135,
+          "std": 0.0056547441206496775
+        },
+        "ece": {
+          "mean": 0.04272268079525087,
+          "std": 0.007743111487771398
+        },
+        "poison_auroc": {
+          "mean": 0.8544795676879794,
+          "std": 0.011349513754716831
+        },
+        "poison_tpr1": {
+          "mean": 0.6771090169036673,
+          "std": 0.015713578394114823
+        },
+        "belief_auroc": {
+          "mean": 0.9974787651758301,
+          "std": 0.001144385772702841
+        },
+        "switches_per_1k": {
+          "mean": 12.478916462502188,
+          "std": 2.9680881366119993
+        },
+        "energy_mj": {
+          "mean": 0.3012656567210916,
+          "std": 0.01012594344557934
+        },
+        "p50_ms": {
+          "mean": 2.456,
+          "std": 0.10500793620801543
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "oracle": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.28496913032711413,
+          "std": 0.020020057426207837
+        },
+        "false_deny": {
+          "mean": 0.024607110736747373,
+          "std": 0.002647864396997309
+        },
+        "legit_grant": {
+          "mean": 0.9753928892632526,
+          "std": 0.0026478643969973107
+        },
+        "safety_denied": {
+          "mean": 0.030579179075340534,
+          "std": 0.010628915687433247
+        },
+        "utility": {
+          "mean": 0.10033806914344481,
+          "std": 0.010207192039389003
+        },
+        "brier": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.8544795676879794,
+          "std": 0.011349513754716831
+        },
+        "poison_tpr1": {
+          "mean": 0.6771090169036673,
+          "std": 0.015713578394114823
+        },
+        "belief_auroc": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 3.1020099122116336,
+          "std": 0.2756898486281198
+        },
+        "energy_mj": {
+          "mean": 0.2945766698129769,
+          "std": 0.0115890065535438
+        },
+        "p50_ms": {
+          "mean": 2.2095,
+          "std": 0.30608822257643314
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      }
+    },
+    "resonant": {
+      "static_high": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.09426876501355305,
+          "std": 0.01162571197923402
+        },
+        "false_deny": {
+          "mean": 0.08590034685033295,
+          "std": 0.003978551421364414
+        },
+        "legit_grant": {
+          "mean": 0.9140996531496668,
+          "std": 0.003978551421364404
+        },
+        "safety_denied": {
+          "mean": 0.09090320415495859,
+          "std": 0.016079635681218705
+        },
+        "utility": {
+          "mean": 0.08684967187658829,
+          "std": 0.0035236857655645904
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.9985248017417943,
+          "std": 0.0007952992191289963
+        },
+        "poison_tpr1": {
+          "mean": 0.9857396830790355,
+          "std": 0.003937900089483984
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.7269260780685015,
+          "std": 0.0029670383979757513
+        },
+        "p50_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "p99_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 4.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 28.0,
+          "std": 0.0
+        }
+      },
+      "static_med": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.3644580144840394,
+          "std": 0.022952006491360283
+        },
+        "false_deny": {
+          "mean": 0.024473280313586136,
+          "std": 0.0026079857245832274
+        },
+        "legit_grant": {
+          "mean": 0.9755267196864139,
+          "std": 0.0026079857245832174
+        },
+        "safety_denied": {
+          "mean": 0.04134799964088552,
+          "std": 0.00993976615632386
+        },
+        "utility": {
+          "mean": 0.056927379579729466,
+          "std": 0.008503545896720416
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.9985248017417943,
+          "std": 0.0007952992191289963
+        },
+        "poison_tpr1": {
+          "mean": 0.9857396830790355,
+          "std": 0.003937900089483984
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.47247709550442385,
+          "std": 0.003380747362808701
+        },
+        "p50_ms": {
+          "mean": 3.4,
+          "std": 0.0
+        },
+        "p99_ms": {
+          "mean": 4.7,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "static_low": {
+        "ivr_per_1k": {
+          "mean": 402.40064247834175,
+          "std": 12.257683369413552
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 973.5729821985362,
+          "std": 5.8391470615267504
+        },
+        "ivr_safety_per_1k": {
+          "mean": 996.3759021572517,
+          "std": 3.722196834463246
+        },
+        "unsafe_grant": {
+          "mean": 0.9259964870964918,
+          "std": 0.011696604183931524
+        },
+        "false_deny": {
+          "mean": 0.003061818867282914,
+          "std": 0.0010188460988564633
+        },
+        "legit_grant": {
+          "mean": 0.9969381811327171,
+          "std": 0.0010188460988564767
+        },
+        "safety_denied": {
+          "mean": 0.0036240978427482104,
+          "std": 0.0037221968344632473
+        },
+        "utility": {
+          "mean": -0.6482860338031421,
+          "std": 0.03801671773104375
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.9985248017417943,
+          "std": 0.0007952992191289963
+        },
+        "poison_tpr1": {
+          "mean": 0.9857396830790355,
+          "std": 0.003937900089483984
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.04689721414204763,
+          "std": 0.0002037143233029095
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "sram_kb": {
+          "mean": 4.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 28.0,
+          "std": 0.0
+        }
+      },
+      "threshold": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.33531111674035835,
+          "std": 0.01611632402349741
+        },
+        "false_deny": {
+          "mean": 0.023758660140040112,
+          "std": 0.0031620964548309156
+        },
+        "legit_grant": {
+          "mean": 0.9762413398599599,
+          "std": 0.0031620964548309143
+        },
+        "safety_denied": {
+          "mean": 0.04558856619639735,
+          "std": 0.011550363114255339
+        },
+        "utility": {
+          "mean": 0.08397232236135353,
+          "std": 0.008759367227497202
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.9985248017417943,
+          "std": 0.0007952992191289963
+        },
+        "poison_tpr1": {
+          "mean": 0.9857396830790355,
+          "std": 0.003937900089483984
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 38.584612257386034,
+          "std": 3.170815627441342
+        },
+        "energy_mj": {
+          "mean": 0.30906443288006136,
+          "std": 0.011548813301597544
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 34.0,
+          "std": 0.0
+        }
+      },
+      "risk_only": {
+        "ivr_per_1k": {
+          "mean": 303.3557899354158,
+          "std": 5.209635216895119
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 673.5286725251001,
+          "std": 20.01829080263274
+        },
+        "ivr_safety_per_1k": {
+          "mean": 996.3759021572517,
+          "std": 3.722196834463246
+        },
+        "unsafe_grant": {
+          "mean": 0.11859921262875694,
+          "std": 0.013481354292589226
+        },
+        "false_deny": {
+          "mean": 0.016941947172327533,
+          "std": 0.0027494951070648984
+        },
+        "legit_grant": {
+          "mean": 0.9830580528276723,
+          "std": 0.0027494951070648967
+        },
+        "safety_denied": {
+          "mean": 0.0036240978427482104,
+          "std": 0.0037221968344632473
+        },
+        "utility": {
+          "mean": -0.3131108666030683,
+          "std": 0.009255080016870736
+        },
+        "brier": {
+          "mean": 0.0020324534584883923,
+          "std": 0.0005546703373153245
+        },
+        "ece": {
+          "mean": 0.005561149012147905,
+          "std": 0.000783676849494297
+        },
+        "poison_auroc": {
+          "mean": 0.9985248017417943,
+          "std": 0.0007952992191289963
+        },
+        "poison_tpr1": {
+          "mean": 0.9857396830790355,
+          "std": 0.003937900089483984
+        },
+        "belief_auroc": {
+          "mean": 0.9999743136318434,
+          "std": 2.295700142070828e-05
+        },
+        "switches_per_1k": {
+          "mean": 9.589024928752012,
+          "std": 2.4683624704504723
+        },
+        "energy_mj": {
+          "mean": 0.13184710886172457,
+          "std": 0.0084977363308753
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 5.299999999999999,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 12.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 74.0,
+          "std": 0.0
+        }
+      },
+      "invariant_only": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.19646284297597966,
+          "std": 0.014661131088170663
+        },
+        "false_deny": {
+          "mean": 0.026965910007973166,
+          "std": 0.0027070236196409954
+        },
+        "legit_grant": {
+          "mean": 0.9730340899920268,
+          "std": 0.002707023619641
+        },
+        "safety_denied": {
+          "mean": 0.03292494751800736,
+          "std": 0.008431386201802176
+        },
+        "utility": {
+          "mean": 0.11455815072179684,
+          "std": 0.0055234247279943175
+        },
+        "brier": {
+          "mean": 0.2089827026560643,
+          "std": 0.014365726322206031
+        },
+        "ece": {
+          "mean": 0.23488623468691966,
+          "std": 0.021281547985368413
+        },
+        "poison_auroc": {
+          "mean": 0.9985248017417943,
+          "std": 0.0007952992191289963
+        },
+        "poison_tpr1": {
+          "mean": 0.9857396830790355,
+          "std": 0.003937900089483984
+        },
+        "belief_auroc": {
+          "mean": 0.8598718261817326,
+          "std": 0.009820417561681073
+        },
+        "switches_per_1k": {
+          "mean": 4.401678384957931,
+          "std": 1.0029555044653382
+        },
+        "energy_mj": {
+          "mean": 0.32269167566277157,
+          "std": 0.01454345604458638
+        },
+        "p50_ms": {
+          "mean": 1.6919999999999997,
+          "std": 0.12372011423639494
+        },
+        "p99_ms": {
+          "mean": 5.6000000000000005,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 9.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 58.0,
+          "std": 0.0
+        }
+      },
+      "full_no_hyst": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.11859921262875694,
+          "std": 0.013481354292589226
+        },
+        "false_deny": {
+          "mean": 0.02638509050430987,
+          "std": 0.002898036434946807
+        },
+        "legit_grant": {
+          "mean": 0.9736149094956902,
+          "std": 0.0028980364349467935
+        },
+        "safety_denied": {
+          "mean": 0.03292494751800736,
+          "std": 0.008431386201802176
+        },
+        "utility": {
+          "mean": 0.12804455654560593,
+          "std": 0.004504883577104757
+        },
+        "brier": {
+          "mean": 0.0020324534584883923,
+          "std": 0.0005546703373153245
+        },
+        "ece": {
+          "mean": 0.005561149012147905,
+          "std": 0.000783676849494297
+        },
+        "poison_auroc": {
+          "mean": 0.9985248017417943,
+          "std": 0.0007952992191289963
+        },
+        "poison_tpr1": {
+          "mean": 0.9857396830790355,
+          "std": 0.003937900089483984
+        },
+        "belief_auroc": {
+          "mean": 0.9999743136318434,
+          "std": 2.295700142070828e-05
+        },
+        "switches_per_1k": {
+          "mean": 9.203046303657775,
+          "std": 2.0900677572652127
+        },
+        "energy_mj": {
+          "mean": 0.2736911500629285,
+          "std": 0.014929511007493403
+        },
+        "p50_ms": {
+          "mean": 1.6507499999999997,
+          "std": 0.08721023449114215
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "full_no_consistency": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.1268959150773197,
+          "std": 0.01712626483372249
+        },
+        "false_deny": {
+          "mean": 0.028540052653258503,
+          "std": 0.00324599706643885
+        },
+        "legit_grant": {
+          "mean": 0.9714599473467415,
+          "std": 0.0032459970664388527
+        },
+        "safety_denied": {
+          "mean": 0.03292494751800736,
+          "std": 0.008431386201802176
+        },
+        "utility": {
+          "mean": 0.12425106253327167,
+          "std": 0.00378292720959526
+        },
+        "brier": {
+          "mean": 0.0046066470437004904,
+          "std": 0.0015279856027859387
+        },
+        "ece": {
+          "mean": 0.010295948589174602,
+          "std": 0.001451151566216723
+        },
+        "poison_auroc": {
+          "mean": 0.9985248017417943,
+          "std": 0.0007952992191289963
+        },
+        "poison_tpr1": {
+          "mean": 0.9857396830790355,
+          "std": 0.003937900089483984
+        },
+        "belief_auroc": {
+          "mean": 0.9999450000668091,
+          "std": 5.990731174030524e-05
+        },
+        "switches_per_1k": {
+          "mean": 6.742068858118488,
+          "std": 1.3824380910470924
+        },
+        "energy_mj": {
+          "mean": 0.31084243575351794,
+          "std": 0.013340513777963081
+        },
+        "p50_ms": {
+          "mean": 2.5759999999999996,
+          "std": 0.16919416853623118
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 12.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 74.0,
+          "std": 0.0
+        }
+      },
+      "full": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.11859921262875694,
+          "std": 0.013481354292589226
+        },
+        "false_deny": {
+          "mean": 0.03068179407683542,
+          "std": 0.0029127533698670694
+        },
+        "legit_grant": {
+          "mean": 0.9693182059231645,
+          "std": 0.002912753369867082
+        },
+        "safety_denied": {
+          "mean": 0.03292494751800736,
+          "std": 0.008431386201802176
+        },
+        "utility": {
+          "mean": 0.12416491219682797,
+          "std": 0.0040174211134846715
+        },
+        "brier": {
+          "mean": 0.0020324534584883923,
+          "std": 0.0005546703373153245
+        },
+        "ece": {
+          "mean": 0.005561149012147905,
+          "std": 0.000783676849494297
+        },
+        "poison_auroc": {
+          "mean": 0.9985248017417943,
+          "std": 0.0007952992191289963
+        },
+        "poison_tpr1": {
+          "mean": 0.9857396830790355,
+          "std": 0.003937900089483984
+        },
+        "belief_auroc": {
+          "mean": 0.9999743136318434,
+          "std": 2.295700142070828e-05
+        },
+        "switches_per_1k": {
+          "mean": 4.470483425072105,
+          "std": 0.5480816185636529
+        },
+        "energy_mj": {
+          "mean": 0.3151225185915821,
+          "std": 0.010752339358329956
+        },
+        "p50_ms": {
+          "mean": 2.63,
+          "std": 0.10832051206181284
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "oracle": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.1159863663724316,
+          "std": 0.014829504042021331
+        },
+        "false_deny": {
+          "mean": 0.02873194362537267,
+          "std": 0.00247114257497829
+        },
+        "legit_grant": {
+          "mean": 0.9712680563746275,
+          "std": 0.002471142574978304
+        },
+        "safety_denied": {
+          "mean": 0.03292494751800736,
+          "std": 0.008431386201802176
+        },
+        "utility": {
+          "mean": 0.12627414044660185,
+          "std": 0.0041025494583132194
+        },
+        "brier": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.9985248017417943,
+          "std": 0.0007952992191289963
+        },
+        "poison_tpr1": {
+          "mean": 0.9857396830790355,
+          "std": 0.003937900089483984
+        },
+        "belief_auroc": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 3.191945290516763,
+          "std": 0.041279463391118106
+        },
+        "energy_mj": {
+          "mean": 0.3028341833892821,
+          "std": 0.013756833811696293
+        },
+        "p50_ms": {
+          "mean": 2.4494999999999996,
+          "std": 0.24018742681497715
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      }
+    },
+    "adaptive": {
+      "static_high": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.09549690143530956,
+          "std": 0.009683130122713757
+        },
+        "false_deny": {
+          "mean": 0.08476989968299423,
+          "std": 0.005108869533852968
+        },
+        "legit_grant": {
+          "mean": 0.9152301003170058,
+          "std": 0.0051088695338529725
+        },
+        "safety_denied": {
+          "mean": 0.08705483816248133,
+          "std": 0.018614902387550442
+        },
+        "utility": {
+          "mean": 0.08860353218170562,
+          "std": 0.004494363340842958
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.993691956788315,
+          "std": 0.0015835100631574831
+        },
+        "poison_tpr1": {
+          "mean": 0.8571870180990212,
+          "std": 0.04247288959009991
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.7273740738050709,
+          "std": 0.0035484835192343537
+        },
+        "p50_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "p99_ms": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 4.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 28.0,
+          "std": 0.0
+        }
+      },
+      "static_med": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.36955678390369134,
+          "std": 0.015667652112959504
+        },
+        "false_deny": {
+          "mean": 0.023678327787286298,
+          "std": 0.0029129954960125178
+        },
+        "legit_grant": {
+          "mean": 0.9763216722127137,
+          "std": 0.00291299549601252
+        },
+        "safety_denied": {
+          "mean": 0.03762420680893552,
+          "std": 0.009528645808116755
+        },
+        "utility": {
+          "mean": 0.06165619841448021,
+          "std": 0.011228841146584718
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.993691956788315,
+          "std": 0.0015835100631574831
+        },
+        "poison_tpr1": {
+          "mean": 0.8571870180990212,
+          "std": 0.04247288959009991
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.4727331598027648,
+          "std": 0.0029202830506425467
+        },
+        "p50_ms": {
+          "mean": 3.4,
+          "std": 0.0
+        },
+        "p99_ms": {
+          "mean": 4.7,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "static_low": {
+        "ivr_per_1k": {
+          "mean": 403.87003740641205,
+          "std": 9.806997189846891
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 977.286228812611,
+          "std": 4.840936472805245
+        },
+        "ivr_safety_per_1k": {
+          "mean": 997.2369993050124,
+          "std": 1.8376234133825196
+        },
+        "unsafe_grant": {
+          "mean": 0.9321477753783449,
+          "std": 0.013654116849103603
+        },
+        "false_deny": {
+          "mean": 0.00300848602194097,
+          "std": 0.0007680629980605585
+        },
+        "legit_grant": {
+          "mean": 0.9969915139780591,
+          "std": 0.0007680629980605669
+        },
+        "safety_denied": {
+          "mean": 0.0027630006949875214,
+          "std": 0.0018376234133825192
+        },
+        "utility": {
+          "mean": -0.6404778150034659,
+          "std": 0.03302876511849292
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.993691956788315,
+          "std": 0.0015835100631574831
+        },
+        "poison_tpr1": {
+          "mean": 0.8571870180990212,
+          "std": 0.04247288959009991
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "energy_mj": {
+          "mean": 0.04690983936674095,
+          "std": 0.00022810522423342698
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "sram_kb": {
+          "mean": 4.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 28.0,
+          "std": 0.0
+        }
+      },
+      "threshold": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.43035573478728895,
+          "std": 0.019251328580641592
+        },
+        "false_deny": {
+          "mean": 0.012353573461777739,
+          "std": 0.0018543380312153904
+        },
+        "legit_grant": {
+          "mean": 0.9876464265382223,
+          "std": 0.0018543380312153826
+        },
+        "safety_denied": {
+          "mean": 0.032159143642261294,
+          "std": 0.008360898346513669
+        },
+        "utility": {
+          "mean": 0.06824917156791564,
+          "std": 0.011890858801477586
+        },
+        "brier": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.993691956788315,
+          "std": 0.0015835100631574831
+        },
+        "poison_tpr1": {
+          "mean": 0.8571870180990212,
+          "std": 0.04247288959009991
+        },
+        "belief_auroc": {
+          "mean": NaN,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 117.19364376223413,
+          "std": 13.895295977375461
+        },
+        "energy_mj": {
+          "mean": 0.29056641659341603,
+          "std": 0.005222254908227961
+        },
+        "p50_ms": {
+          "mean": 1.1829999999999998,
+          "std": 0.022135943621178676
+        },
+        "p99_ms": {
+          "mean": 4.7,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 6.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 34.0,
+          "std": 0.0
+        }
+      },
+      "risk_only": {
+        "ivr_per_1k": {
+          "mean": 308.9848769444521,
+          "std": 5.756879874154074
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 689.5417606393537,
+          "std": 25.36278653488481
+        },
+        "ivr_safety_per_1k": {
+          "mean": 997.2369993050124,
+          "std": 1.8376234133825196
+        },
+        "unsafe_grant": {
+          "mean": 0.1254217348495528,
+          "std": 0.0131540689561649
+        },
+        "false_deny": {
+          "mean": 0.015243971092674002,
+          "std": 0.0028549193004012937
+        },
+        "legit_grant": {
+          "mean": 0.984756028907326,
+          "std": 0.002854919300401274
+        },
+        "safety_denied": {
+          "mean": 0.0027630006949875214,
+          "std": 0.0018376234133825192
+        },
+        "utility": {
+          "mean": -0.31885225841276066,
+          "std": 0.008198042087605563
+        },
+        "brier": {
+          "mean": 0.08805267198437809,
+          "std": 0.024272591251007045
+        },
+        "ece": {
+          "mean": 0.11717283665258704,
+          "std": 0.027720483525395096
+        },
+        "poison_auroc": {
+          "mean": 0.993691956788315,
+          "std": 0.0015835100631574831
+        },
+        "poison_tpr1": {
+          "mean": 0.8571870180990212,
+          "std": 0.04247288959009991
+        },
+        "belief_auroc": {
+          "mean": 0.9946225766441641,
+          "std": 0.0021253392216570325
+        },
+        "switches_per_1k": {
+          "mean": 9.127746693011371,
+          "std": 2.1235020080749982
+        },
+        "energy_mj": {
+          "mean": 0.1291072484061131,
+          "std": 0.010177225789640901
+        },
+        "p50_ms": {
+          "mean": 0.9,
+          "std": 1.1702778228589004e-16
+        },
+        "p99_ms": {
+          "mean": 5.299999999999999,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 12.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 74.0,
+          "std": 0.0
+        }
+      },
+      "invariant_only": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.24941524672515397,
+          "std": 0.01692593940198658
+        },
+        "false_deny": {
+          "mean": 0.016546419266291305,
+          "std": 0.002437323696554254
+        },
+        "legit_grant": {
+          "mean": 0.9834535807337087,
+          "std": 0.002437323696554256
+        },
+        "safety_denied": {
+          "mean": 0.026070991187610092,
+          "std": 0.007156469178331518
+        },
+        "utility": {
+          "mean": 0.11500460359279199,
+          "std": 0.007632046968917244
+        },
+        "brier": {
+          "mean": 0.2024220818336681,
+          "std": 0.020148365412022088
+        },
+        "ece": {
+          "mean": 0.3097775748967896,
+          "std": 0.022176008260846446
+        },
+        "poison_auroc": {
+          "mean": 0.993691956788315,
+          "std": 0.0015835100631574831
+        },
+        "poison_tpr1": {
+          "mean": 0.8571870180990212,
+          "std": 0.04247288959009991
+        },
+        "belief_auroc": {
+          "mean": 0.9958645321478551,
+          "std": 0.0006527934850610311
+        },
+        "switches_per_1k": {
+          "mean": 0.545512029024075,
+          "std": 0.11423995374186625
+        },
+        "energy_mj": {
+          "mean": 0.2133661182532005,
+          "std": 0.004359957152025251
+        },
+        "p50_ms": {
+          "mean": 1.0777499999999998,
+          "std": 0.24627347603832614
+        },
+        "p99_ms": {
+          "mean": 5.450000000000001,
+          "std": 9.362222582871203e-16
+        },
+        "sram_kb": {
+          "mean": 9.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 58.0,
+          "std": 0.0
+        }
+      },
+      "full_no_hyst": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.12280500640199168,
+          "std": 0.011570382841874616
+        },
+        "false_deny": {
+          "mean": 0.023915402333982577,
+          "std": 0.0027057801878541798
+        },
+        "legit_grant": {
+          "mean": 0.9760845976660175,
+          "std": 0.0027057801878541936
+        },
+        "safety_denied": {
+          "mean": 0.026070991187610092,
+          "std": 0.007156469178331518
+        },
+        "utility": {
+          "mean": 0.13186178408898558,
+          "std": 0.004885521287876152
+        },
+        "brier": {
+          "mean": 0.08805267198437809,
+          "std": 0.024272591251007045
+        },
+        "ece": {
+          "mean": 0.11717283665258704,
+          "std": 0.027720483525395096
+        },
+        "poison_auroc": {
+          "mean": 0.993691956788315,
+          "std": 0.0015835100631574831
+        },
+        "poison_tpr1": {
+          "mean": 0.8571870180990212,
+          "std": 0.04247288959009991
+        },
+        "belief_auroc": {
+          "mean": 0.9946225766441641,
+          "std": 0.0021253392216570325
+        },
+        "switches_per_1k": {
+          "mean": 9.264630945089337,
+          "std": 1.346582751230266
+        },
+        "energy_mj": {
+          "mean": 0.2677041372289093,
+          "std": 0.013225488848135092
+        },
+        "p50_ms": {
+          "mean": 1.6547499999999995,
+          "std": 0.055508382750315687
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "full_no_consistency": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.1215737537090206,
+          "std": 0.01256390270320302
+        },
+        "false_deny": {
+          "mean": 0.02779422180088681,
+          "std": 0.003382149179445853
+        },
+        "legit_grant": {
+          "mean": 0.9722057781991132,
+          "std": 0.003382149179445852
+        },
+        "safety_denied": {
+          "mean": 0.026070991187610092,
+          "std": 0.007156469178331518
+        },
+        "utility": {
+          "mean": 0.12824812237209662,
+          "std": 0.004854842641858407
+        },
+        "brier": {
+          "mean": 0.0025878827088686544,
+          "std": 0.002992357221590695
+        },
+        "ece": {
+          "mean": 0.01040390654216269,
+          "std": 0.003914924419564573
+        },
+        "poison_auroc": {
+          "mean": 0.993691956788315,
+          "std": 0.0015835100631574831
+        },
+        "poison_tpr1": {
+          "mean": 0.8571870180990212,
+          "std": 0.04247288959009991
+        },
+        "belief_auroc": {
+          "mean": 0.9999835557564725,
+          "std": 4.436072955155157e-05
+        },
+        "switches_per_1k": {
+          "mean": 4.910788942138323,
+          "std": 0.6464610563598966
+        },
+        "energy_mj": {
+          "mean": 0.3089066573679082,
+          "std": 0.012643323034773049
+        },
+        "p50_ms": {
+          "mean": 2.56,
+          "std": 0.15355057075041353
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 12.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 74.0,
+          "std": 0.0
+        }
+      },
+      "full": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.12280500640199168,
+          "std": 0.011570382841874616
+        },
+        "false_deny": {
+          "mean": 0.02893222635605292,
+          "std": 0.0039137015182227125
+        },
+        "legit_grant": {
+          "mean": 0.9710677736439471,
+          "std": 0.00391370151822271
+        },
+        "safety_denied": {
+          "mean": 0.026070991187610092,
+          "std": 0.007156469178331518
+        },
+        "utility": {
+          "mean": 0.1273279902038492,
+          "std": 0.005232386986738698
+        },
+        "brier": {
+          "mean": 0.08805267198437809,
+          "std": 0.024272591251007045
+        },
+        "ece": {
+          "mean": 0.11717283665258704,
+          "std": 0.027720483525395096
+        },
+        "poison_auroc": {
+          "mean": 0.993691956788315,
+          "std": 0.0015835100631574831
+        },
+        "poison_tpr1": {
+          "mean": 0.8571870180990212,
+          "std": 0.04247288959009991
+        },
+        "belief_auroc": {
+          "mean": 0.9946225766441641,
+          "std": 0.0021253392216570325
+        },
+        "switches_per_1k": {
+          "mean": 4.843725205884603,
+          "std": 0.7515795964159403
+        },
+        "energy_mj": {
+          "mean": 0.3143815753309035,
+          "std": 0.010726789933638185
+        },
+        "p50_ms": {
+          "mean": 2.564,
+          "std": 0.1320101006236517
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      },
+      "oracle": {
+        "ivr_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_readwrite_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_actuate_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ivr_safety_per_1k": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "unsafe_grant": {
+          "mean": 0.1183666841235372,
+          "std": 0.0099678257504633
+        },
+        "false_deny": {
+          "mean": 0.025983466591043742,
+          "std": 0.003092396952382374
+        },
+        "legit_grant": {
+          "mean": 0.9740165334089562,
+          "std": 0.003092396952382386
+        },
+        "safety_denied": {
+          "mean": 0.026070991187610092,
+          "std": 0.007156469178331518
+        },
+        "utility": {
+          "mean": 0.1301107693232213,
+          "std": 0.004898801598131976
+        },
+        "brier": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "ece": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "poison_auroc": {
+          "mean": 0.993691956788315,
+          "std": 0.0015835100631574831
+        },
+        "poison_tpr1": {
+          "mean": 0.8571870180990212,
+          "std": 0.04247288959009991
+        },
+        "belief_auroc": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "switches_per_1k": {
+          "mean": 3.186211473445654,
+          "std": 0.06465271829404212
+        },
+        "energy_mj": {
+          "mean": 0.29861854733451915,
+          "std": 0.011831013049323222
+        },
+        "p50_ms": {
+          "mean": 2.3917500000000005,
+          "std": 0.3023749741628762
+        },
+        "p99_ms": {
+          "mean": 5.85,
+          "std": 0.0
+        },
+        "sram_kb": {
+          "mean": 14.0,
+          "std": 0.0
+        },
+        "flash_kb": {
+          "mean": 86.0,
+          "std": 0.0
+        }
+      }
+    }
+  },
+  "floor": {
+    "mutual+header": {
+      "unsafe_grant_attack": 0.17687094528711786,
+      "utility_attack": 0.11992945206414404,
+      "ivr_max": 0.0,
+      "false_deny": 0.0258525262308262,
+      "energy_mj": 0.27921730632457525
+    },
+    "attest+header": {
+      "unsafe_grant_attack": 0.16956000273636002,
+      "utility_attack": 0.11836886926008161,
+      "ivr_max": 0.0,
+      "false_deny": 0.027717155560005598,
+      "energy_mj": 0.2881195637584215
+    },
+    "mutual+deep": {
+      "unsafe_grant_attack": 0.1709985742846937,
+      "utility_attack": 0.11682577630185499,
+      "ivr_max": 0.0,
+      "false_deny": 0.028714607548644834,
+      "energy_mj": 0.3566459673046916
+    },
+    "attest+deep": {
+      "unsafe_grant_attack": 0.16474150938980706,
+      "utility_attack": 0.11531966474290119,
+      "ivr_max": 0.0,
+      "false_deny": 0.030465353807207763,
+      "energy_mj": 0.36267913611850444
+    }
+  },
+  "trace": {
+    "contrast": 1.6892810335754653,
+    "ci95": [
+      1.6520193319192873,
+      1.7256143519679739
+    ],
+    "sim_contrast": 1.6892810335754653
+  },
+  "attack_mean": {
+    "static_high": {
+      "ivr_per_1k": 0.0,
+      "ivr_readwrite_per_1k": 0.0,
+      "ivr_actuate_per_1k": 0.0,
+      "ivr_safety_per_1k": 0.0,
+      "unsafe_grant": 0.12673319461186658,
+      "utility": 0.08402488098673512,
+      "brier": NaN,
+      "switches_per_1k": 0.0,
+      "energy_mj": 0.7277615597447656,
+      "p50_ms": 6.0,
+      "p99_ms": 6.0,
+      "sram_kb": 4.0,
+      "flash_kb": 28.0,
+      "false_deny": 0.0879143184745365,
+      "safety_denied": 0.08828217904213662
+    },
+    "static_med": {
+      "ivr_per_1k": 0.0,
+      "ivr_readwrite_per_1k": 0.0,
+      "ivr_actuate_per_1k": 0.0,
+      "ivr_safety_per_1k": 0.0,
+      "unsafe_grant": 0.3647842155373258,
+      "utility": 0.06679583636992772,
+      "brier": NaN,
+      "switches_per_1k": 0.0,
+      "energy_mj": 0.4724817129935886,
+      "p50_ms": 3.3999999999999995,
+      "p99_ms": 4.7,
+      "sram_kb": 14.0,
+      "flash_kb": 86.0,
+      "false_deny": 0.024495024120055085,
+      "safety_denied": 0.03926667087079139
+    },
+    "static_low": {
+      "ivr_per_1k": 393.3076609319783,
+      "ivr_readwrite_per_1k": 0.0,
+      "ivr_actuate_per_1k": 979.8072679157339,
+      "ivr_safety_per_1k": 996.7586648425482,
+      "unsafe_grant": 0.7980338603232843,
+      "utility": -0.5857884472599676,
+      "brier": NaN,
+      "switches_per_1k": 0.0,
+      "energy_mj": 0.046938772669360494,
+      "p50_ms": 0.9000000000000001,
+      "p99_ms": 0.9000000000000001,
+      "sram_kb": 4.0,
+      "flash_kb": 28.0,
+      "false_deny": 0.0030873096843756177,
+      "safety_denied": 0.0032413351574518104
+    },
+    "threshold": {
+      "ivr_per_1k": 0.0,
+      "ivr_readwrite_per_1k": 0.0,
+      "ivr_actuate_per_1k": 0.0,
+      "ivr_safety_per_1k": 0.0,
+      "unsafe_grant": 0.4140218406755561,
+      "utility": 0.0774280499578681,
+      "brier": NaN,
+      "switches_per_1k": 47.051199517684054,
+      "energy_mj": 0.2950880790086733,
+      "p50_ms": 1.3287142857142855,
+      "p99_ms": 5.171428571428572,
+      "sram_kb": 6.0,
+      "flash_kb": 34.0,
+      "false_deny": 0.019355086191314912,
+      "safety_denied": 0.0387261432874681
+    },
+    "risk_only": {
+      "ivr_per_1k": 327.4092499851173,
+      "ivr_readwrite_per_1k": 0.0,
+      "ivr_actuate_per_1k": 777.9961056242928,
+      "ivr_safety_per_1k": 996.7586648425482,
+      "unsafe_grant": 0.23771948655964187,
+      "utility": -0.3661628906910576,
+      "brier": 0.08062199402938505,
+      "switches_per_1k": 14.388670513501717,
+      "energy_mj": 0.11337963470316008,
+      "p50_ms": 0.9000000000000001,
+      "p99_ms": 4.739867142857139,
+      "sram_kb": 12.0,
+      "flash_kb": 74.0,
+      "false_deny": 0.013038756666505348,
+      "safety_denied": 0.0032413351574518104
+    },
+    "invariant_only": {
+      "ivr_per_1k": 0.0,
+      "ivr_readwrite_per_1k": 0.0,
+      "ivr_actuate_per_1k": 0.0,
+      "ivr_safety_per_1k": 0.0,
+      "unsafe_grant": 0.312282382024967,
+      "utility": 0.10195040783184202,
+      "brier": 0.266793458781092,
+      "switches_per_1k": 1.904201601327459,
+      "energy_mj": 0.23941146241336098,
+      "p50_ms": 1.3407499999999999,
+      "p99_ms": 4.995,
+      "sram_kb": 9.0,
+      "flash_kb": 58.0,
+      "false_deny": 0.020361558591286962,
+      "safety_denied": 0.029393233064917448
+    },
+    "full_no_hyst": {
+      "ivr_per_1k": 0.0,
+      "ivr_readwrite_per_1k": 0.0,
+      "ivr_actuate_per_1k": 0.0,
+      "ivr_safety_per_1k": 0.0,
+      "unsafe_grant": 0.20946853391412512,
+      "utility": 0.11948469737083942,
+      "brier": 0.08062199402938505,
+      "switches_per_1k": 15.306801162483344,
+      "energy_mj": 0.2427958503630963,
+      "p50_ms": 1.5064285714285715,
+      "p99_ms": 5.535714285714286,
+      "sram_kb": 14.0,
+      "flash_kb": 86.0,
+      "false_deny": 0.022462818126578774,
+      "safety_denied": 0.029393233064917448
+    },
+    "full_no_consistency": {
+      "ivr_per_1k": 0.0,
+      "ivr_readwrite_per_1k": 0.0,
+      "ivr_actuate_per_1k": 0.0,
+      "ivr_safety_per_1k": 0.0,
+      "unsafe_grant": 0.1835603333682958,
+      "utility": 0.11808643485150416,
+      "brier": 0.13407529929198062,
+      "switches_per_1k": 7.660483850395437,
+      "energy_mj": 0.29355607206561884,
+      "p50_ms": 2.396,
+      "p99_ms": 5.595714285714286,
+      "sram_kb": 12.0,
+      "flash_kb": 74.0,
+      "false_deny": 0.026895731744544574,
+      "safety_denied": 0.029393233064917448
+    },
+    "full": {
+      "ivr_per_1k": 0.0,
+      "ivr_readwrite_per_1k": 0.0,
+      "ivr_actuate_per_1k": 0.0,
+      "ivr_safety_per_1k": 0.0,
+      "unsafe_grant": 0.17687094528711786,
+      "utility": 0.11992945206414408,
+      "brier": 0.08062199402938505,
+      "switches_per_1k": 6.481942953490033,
+      "energy_mj": 0.28775983859610055,
+      "p50_ms": 2.2657499999999997,
+      "p99_ms": 5.541428571428573,
+      "sram_kb": 14.0,
+      "flash_kb": 86.0,
+      "false_deny": 0.026744140369220955,
+      "safety_denied": 0.029393233064917448
+    },
+    "oracle": {
+      "ivr_per_1k": 0.0,
+      "ivr_readwrite_per_1k": 0.0,
+      "ivr_actuate_per_1k": 0.0,
+      "ivr_safety_per_1k": 0.0,
+      "unsafe_grant": 0.14842088443944718,
+      "utility": 0.12819446790351172,
+      "brier": 0.0,
+      "switches_per_1k": 3.9294140494846275,
+      "energy_mj": 0.2808009038559889,
+      "p50_ms": 2.2339642857142854,
+      "p99_ms": 5.5928571428571425,
+      "sram_kb": 14.0,
+      "flash_kb": 86.0,
+      "false_deny": 0.024819732322072182,
+      "safety_denied": 0.029393233064917448
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "dataset": "IoT-23 individual scenarios (Zeek conn.log.labeled)",
+  "dataset_doi": "10.5281/zenodo.4743746",
+  "bin_seconds": 60.0,
+  "captures": {
+    "benign.log": {
+      "source": "https://mcfp.felk.cvut.cz/publicDatasets/IoT-23-Dataset/IndividualScenarios/CTU-Honeypot-Capture-5-1/bro/conn.log.labeled",
+      "sha256": "f36db06e7d6ba7364e932a5b003f75835e004b320d70019e8a2f0ba8685d9262",
+      "kind": "honeypot",
+      "labels": {
+        "benign": 1374
+      },
+      "benign": {
+        "flows": 1374,
+        "packets": 397039.0,
+        "span_s": 19750.3,
+        "aggregate_pkt_per_s": 20.1029,
+        "flow_pkts_median": 3.0,
+        "flow_pkts_p95": 29.0,
+        "flow_pkts_mean": 288.9657933042213,
+        "bins_60s": 329,
+        "bin_rate_median": 0.7711297575328956,
+        "bin_rate_p95": 5.644332305785893,
+        "log_rate_mu": -0.4029934706457212,
+        "log_rate_sigma": 1.7302477190371237,
+        "interarrival_median_s": 0.12022089958190918
+      },
+      "malicious": null
+    },
+    "malware8.log": {
+      "source": "https://mcfp.felk.cvut.cz/publicDatasets/IoT-23-Dataset/IndividualScenarios/CTU-IoT-Malware-Capture-8-1/bro/conn.log.labeled",
+      "sha256": "4877ca8f0f01902fbd18d28b7d06cb3d0be082355b7f2c8862c9deef1782eb8a",
+      "kind": "malware",
+      "labels": {
+        "benign": 2181,
+        "malicious": 8222
+      },
+      "benign": {
+        "flows": 2181,
+        "packets": 4343.0,
+        "span_s": 86342.0,
+        "aggregate_pkt_per_s": 0.0503,
+        "flow_pkts_median": 2.0,
+        "flow_pkts_p95": 2.0,
+        "flow_pkts_mean": 1.991288399816598,
+        "bins_60s": 1365,
+        "bin_rate_median": 0.03333333333333333,
+        "bin_rate_p95": 0.1,
+        "log_rate_mu": -3.0459376240498486,
+        "log_rate_sigma": 0.44753149038155904,
+        "interarrival_median_s": 42.499852538108826
+      },
+      "malicious": {
+        "flows": 8222,
+        "packets": 12334.0,
+        "span_s": 82262.4,
+        "aggregate_pkt_per_s": 0.1499,
+        "flow_pkts_median": 1.0,
+        "flow_pkts_p95": 3.0,
+        "flow_pkts_mean": 1.5001216249087814,
+        "bins_60s": 1372,
+        "bin_rate_median": 0.14973591229428507,
+        "bin_rate_p95": 0.18333333333333332,
+        "log_rate_mu": -1.9149933014785712,
+        "log_rate_sigma": 0.1886036015251223,
+        "interarrival_median_s": 8.320295095443726
+      }
+    },
+    "malware34.log": {
+      "source": "https://mcfp.felk.cvut.cz/publicDatasets/IoT-23-Dataset/IndividualScenarios/CTU-IoT-Malware-Capture-34-1/bro/conn.log.labeled",
+      "sha256": "d69e49b2aae8c1bd33286936531658202dec47d989f0439bad3f8be180467a6e",
+      "kind": "malware",
+      "labels": {
+        "benign": 1923,
+        "malicious": 21222
+      },
+      "benign": {
+        "flows": 1923,
+        "packets": 27107.0,
+        "span_s": 86392.6,
+        "aggregate_pkt_per_s": 0.3138,
+        "flow_pkts_median": 2.0,
+        "flow_pkts_p95": 2.0,
+        "flow_pkts_mean": 14.096203848153927,
+        "bins_60s": 1018,
+        "bin_rate_median": 0.03333333333333333,
+        "bin_rate_p95": 0.23333333333333334,
+        "log_rate_mu": -3.1789633563463564,
+        "log_rate_sigma": 0.8517460341749322,
+        "interarrival_median_s": 28.000175952911377
+      },
+      "malicious": {
+        "flows": 6962,
+        "packets": 134588.0,
+        "span_s": 86081.6,
+        "aggregate_pkt_per_s": 1.5635,
+        "flow_pkts_median": 3.0,
+        "flow_pkts_p95": 15.0,
+        "flow_pkts_mean": 19.33180120654984,
+        "bins_60s": 855,
+        "bin_rate_median": 0.4523158470582488,
+        "bin_rate_p95": 2.231973976633262,
+        "log_rate_mu": -0.6087233983861924,
+        "log_rate_sigma": 0.9155524925626253,
+        "interarrival_median_s": 2.841878890991211
+      }
+    }
+  },
+  "pooled": {
+    "benign_bins": 2383,
+    "malicious_bins": 2227,
+    "contrast_captures": [
+      "malware34.log",
+      "malware8.log"
+    ],
+    "benign_log_rate_mu": -3.102765234405638,
+    "benign_log_rate_sigma": 0.6549584298833193,
+    "malicious_log_rate_mu": -1.4134842008301725,
+    "malicious_log_rate_sigma": 0.8644819327020875,
+    "log_rate_contrast": {
+      "point": 1.6892810335754653,
+      "ci95": [
+        1.6520193319192873,
+        1.7256143519679739
+      ],
+      "n_bootstrap": 2000,
+      "method": "stratified bin bootstrap (between-capture heterogeneity shown separately)"
+    },
+    "per_capture_contrast": {
+      "malware8.log": 1.1309443225712774,
+      "malware34.log": 2.570239957960164
+    },
+    "per_capture_contrast_range": [
+      1.1309443225712774,
+      2.570239957960164
+    ],
+    "excluded_from_contrast": [
+      "benign.log"
+    ]
+  },
+  "simulator": {
+    "benign_log_pkt_mean": 4.2,
+    "dos_log_pkt_mean": 5.8892810335754655,
+    "log_contrast": 1.6892810335754653,
+    "contrast_inside_trace_ci": true
+  },
+  "interpretation": "Absolute rates are not directly comparable: the captures are sparse honeypot/C2 traces while the simulator models per-node application telemetry. Only the benign-to-attack mean-log-rate *contrast* is calibrated; the simulator's dispersion is narrower than the trace and is not claimed to match it."
+}
