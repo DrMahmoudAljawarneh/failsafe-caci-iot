@@ -8,20 +8,12 @@ venv/
 # OS
 .DS_Store
 
-# LaTeX build artifacts (the compiled paper/main.pdf is kept)
-paper/main.aux
-paper/main.bbl
-paper/main.blg
-paper/main.fdb_latexmk
-paper/main.fls
-paper/main.log
-paper/main.out
-paper/main.spl
-paper/*.synctex.gz
+# Manuscript is kept locally and is not distributed in this repository.
+# make_paper_assets.py still regenerates tables and figures into paper/.
+paper/
 
 # Raw public IoT-23 captures are fetched on demand by trace_calibration.py
 experiments/data/*.log
 
 # Internal review and decision records, not part of the public artifact
-paper/peer_review_report.md
 research_log.md

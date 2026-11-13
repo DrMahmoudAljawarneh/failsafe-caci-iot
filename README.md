@@ -1,6 +1,6 @@
 # Fail-Safe Context-Adaptive Access Control for Cyber-Physical IoT
 
-Simulator, frozen experiment matrix, and manuscript source for:
+Simulator, frozen experiment matrix, and reproducibility artifact for:
 
 > **Fail-Safe Context-Adaptive Access Control with Continuous Risk Belief Updates
 > and Hard Safety Invariants for Cyber-Physical IoT**
@@ -15,7 +15,8 @@ re-check. The evaluation is a paired 24-node discrete-time simulation with eight
 scenarios, ten policies and ten seeds, plus a trace-derived calibration of one
 network-intensity prior against public IoT-23 captures.
 
-The compiled manuscript is [`paper/main.pdf`](paper/main.pdf) (51 pages).
+The manuscript itself is not distributed in this repository. The code and frozen
+results here regenerate every table, figure and summary statistic reported in it.
 
 ## Repository layout
 
@@ -27,13 +28,18 @@ The compiled manuscript is [`paper/main.pdf`](paper/main.pdf) (51 pages).
 | `experiments/make_paper_assets.py` | Sole generator of every table, figure and `summary.json` |
 | `experiments/test_simulator.py` | 23 unit tests, including the exhaustive I1/I2 mask checks |
 | `experiments/results/` | Frozen `main.csv` (800 runs), summaries, floor sweep, trace priors |
-| `paper/` | Elsevier `elsarticle` source, sections, generated tables and figures |
 | `literature/` | Search log, screening, synthesis matrix, abstracts |
+
+Generated tables and figures are written to a local, gitignored `paper/`
+directory so they can be dropped into the manuscript build. That directory is
+created on demand by `make assets`.
 
 ## Reproduce
 
-Requires Python 3.11+ (developed on 3.14), NumPy, SciPy, Matplotlib, and a LaTeX
-installation with `latexmk` and `elsarticle`.
+Requires Python 3.11+ (developed on 3.14), NumPy, SciPy and Matplotlib.
+Building the manuscript additionally requires a LaTeX installation with
+`latexmk` and `elsarticle`, but the manuscript source is not part of this
+repository.
 
 ```bash
 python3 -m venv .venv
@@ -41,7 +47,7 @@ source .venv/bin/activate
 pip install -r experiments/requirements.txt
 
 make test     # 23 unit tests
-make all      # matrix -> floor sweep -> tables/figures -> PDF
+make all      # matrix -> floor sweep -> tables/figures/summary
 ```
 
 `make all` takes about one to two minutes on eight cores. To change the
@@ -52,7 +58,6 @@ make test
 make matrix   # experiments/results/main.csv, 10 seeds x 8 scenarios x 10 policies
 make floor    # experiments/results/floor_sensitivity.json
 make assets   # paper/tables/*.tex, paper/figures/*, experiments/results/summary.json
-make paper    # paper/main.pdf
 ```
 
 The trace priors used by the simulator are committed as
@@ -116,7 +121,7 @@ hand-typed experimental values in its tables and figures.
   title        = {Fail-Safe Context-Adaptive Access Control with Continuous Risk
                   Belief Updates and Hard Safety Invariants for Cyber-Physical IoT},
   year         = {2026},
-  note         = {Preprint and reproducibility artifact},
+  note         = {Reproducibility artifact},
   howpublished = {\url{https://github.com/DrMahmoudAljawarneh/failsafe-caci-iot}}
 }
 ```
@@ -126,7 +131,6 @@ A `CITATION.cff` is included for GitHub's citation widget.
 ## License
 
 The code in `experiments/` is released under the MIT License (see `LICENSE`).
-The manuscript source, figures and compiled PDF in `paper/` are © Mahmoud
-Aljawarneh and are provided for inspection and reproducibility; please cite the
-paper if you use them. The IoT-23 captures remain subject to their original
-terms and are downloaded, not redistributed.
+The manuscript, its figures and its compiled PDF are not part of this
+repository. The IoT-23 captures remain subject to their original terms and are
+downloaded, not redistributed.

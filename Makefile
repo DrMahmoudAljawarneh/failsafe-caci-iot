@@ -1,9 +1,9 @@
 PYTHON ?= python3
 JOBS ?= 8
 
-.PHONY: all test matrix floor assets paper clean
+.PHONY: all test matrix floor assets clean
 
-all: test matrix floor assets paper
+all: test matrix floor assets
 
 test:
 	cd experiments && $(PYTHON) -m unittest -q test_simulator.py
@@ -17,8 +17,5 @@ floor:
 assets:
 	cd experiments && $(PYTHON) make_paper_assets.py
 
-paper:
-	cd paper && $(MAKE) pdf
-
 clean:
-	cd paper && $(MAKE) clean
+	rm -rf experiments/__pycache__ experiments/.pytest_cache paper/tables paper/figures

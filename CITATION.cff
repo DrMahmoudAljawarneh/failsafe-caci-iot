@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this software or the accompanying manuscript, please cite it as below."
+message: "If you use this software, please cite it as below."
 title: "Fail-Safe Context-Adaptive Access Control with Continuous Risk Belief Updates and Hard Safety Invariants for Cyber-Physical IoT"
 type: software
 authors:
@@ -12,9 +12,9 @@ url: "https://github.com/DrMahmoudAljawarneh/failsafe-caci-iot"
 license: MIT
 date-released: 2026-11-13
 abstract: >-
-  Simulator, frozen 800-run experiment matrix, and manuscript source for a
-  fail-safe context-adaptive access-control design for cyber-physical IoT. The
-  design separates optimisable adaptation inside an admissible set from the
+  Simulator and frozen 800-run experiment matrix for a fail-safe
+  context-adaptive access-control design for cyber-physical IoT. The design
+  separates optimisable adaptation inside an admissible set from the
   unconditional actuation and safety invariants that define the set, and
   evaluates the separation under adaptive context poisoning.
 keywords:
