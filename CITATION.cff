@@ -11,6 +11,7 @@ repository-code: "https://github.com/DrMahmoudAljawarneh/failsafe-caci-iot"
 url: "https://github.com/DrMahmoudAljawarneh/failsafe-caci-iot"
 license: MIT
 date-released: 2026-11-13
+version: "1.0.0"
 abstract: >-
   Simulator and frozen 800-run experiment matrix for a fail-safe
   context-adaptive access-control design for cyber-physical IoT. The design
